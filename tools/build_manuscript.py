@@ -77,7 +77,7 @@ REFERENCES = [
     "Toth IK, van der Wolf JM, Saddler G, Lojkowska E, Hélias V, Pirhonen M, Tsror L, Elphinstone JG (2011) Dickeya species: an emerging problem for potato production in Europe. Plant Pathol 60:385–399. https://doi.org/10.1111/j.1365-3059.2011.02427.x",
     "Secor GA, Gudmestad NC (1999) Managing fungal diseases of potato. Can J Plant Pathol 21:213–221. https://doi.org/10.1080/07060669909501184",
     "ElMasry G, Cubero S, Moltó E, Blasco J (2012) In-line sorting of irregular potatoes by using automated computer-based machine vision system. J Food Eng 112:60–68. https://doi.org/10.1016/j.jfoodeng.2012.03.027",
-    "Su Q, Kondo N, Li M, Sun H, Al Riza DF, Habaragamuwa H (2018) Potato quality grading based on machine vision with 3D shape analysis. Comput Electron Agric 152:261–268. https://doi.org/10.1016/j.compag.2018.07.012",
+    "Su Q, Kondo N, Li M, Sun H, Al Riza DF, Habaragamuwa H (2018) Potato quality grading based on machine vision and 3D shape analysis. Comput Electron Agric 152:261–268. https://doi.org/10.1016/j.compag.2018.07.012",
     "Mohanty SP, Hughes DP, Salathé M (2016) Using deep learning for image-based plant disease detection. Front Plant Sci 7:1419. https://doi.org/10.3389/fpls.2016.01419",
     "Ferentinos KP (2018) Deep learning models for plant disease detection and diagnosis. Comput Electron Agric 145:311–318. https://doi.org/10.1016/j.compag.2018.01.009",
     "Kamilaris A, Prenafeta-Boldú FX (2018) Deep learning in agriculture: a survey. Comput Electron Agric 147:70–90. https://doi.org/10.1016/j.compag.2018.02.016",
@@ -98,7 +98,7 @@ REFERENCES = [
     "Seelwal P, Dhiman P, Gulzar Y, Kaur A, Wadhwa S, Onn CW (2024) A systematic review of deep learning applications for rice disease diagnosis: current trends and future directions. Front Comput Sci 6:1452961. https://doi.org/10.3389/fcomp.2024.1452961",
     "Oppenheim D, Shani G (2017) Potato disease classification using convolution neural networks. Adv Anim Biosci 8(2):244–249. https://doi.org/10.1017/S2040470017001376",
     "Oppenheim D, Shani G, Erlich O, Tsror L (2019) Using deep learning for image-based potato tuber disease detection. Phytopathology 109:1083–1087. https://doi.org/10.1094/PHYTO-08-18-0288-R",
-    "Marino S, Beauseroy P, Smolarz A (2019) Deep learning-based method for classifying and localizing potato blemishes. In: Proc 8th Int Conf Pattern Recognit Appl Methods (ICPRAM), pp 107–117",
+    "Marino S, Beauseroy P, Smolarz A (2019) Deep learning-based method for classifying and localizing potato blemishes. In: Proc 8th Int Conf Pattern Recognit Appl Methods (ICPRAM), vol 1, pp 107–117. https://doi.org/10.5220/0007350101070117",
     "Nair V, Hinton GE (2010) Rectified linear units improve restricted Boltzmann machines. In: Proc 27th Int Conf Mach Learn (ICML), pp 807–814",
     "Maas AL, Hannun AY, Ng AY (2013) Rectifier nonlinearities improve neural network acoustic models. In: ICML Workshop on Deep Learning for Audio, Speech and Language Processing",
     "He K, Zhang X, Ren S, Sun J (2015) Delving deep into rectifiers: surpassing human-level performance on ImageNet classification. In: Proc IEEE Int Conf Comput Vis (ICCV), pp 1026–1034. https://doi.org/10.1109/ICCV.2015.123",
@@ -107,7 +107,7 @@ REFERENCES = [
     "Islam S, Afrin T (2025) PotatoCare: deep learning based potato disease dataset. Mendeley Data, V2. https://doi.org/10.17632/7vm7xskfg4.2",
     "Simonyan K, Zisserman A (2015) Very deep convolutional networks for large-scale image recognition. In: Int Conf Learn Represent (ICLR). arXiv:1409.1556",
     "He K, Zhang X, Ren S, Sun J (2016) Deep residual learning for image recognition. In: Proc IEEE Conf Comput Vis Pattern Recognit (CVPR), pp 770–778. https://doi.org/10.1109/CVPR.2016.90",
-    "Huang G, Liu Z, van der Maaten L, Weinberger KQ (2017) Densely connected convolutional networks. In: Proc IEEE Conf Comput Vis Pattern Recognit (CVPR), pp 4700–4708. https://doi.org/10.1109/CVPR.2017.243",
+    "Huang G, Liu Z, van der Maaten L, Weinberger KQ (2017) Densely connected convolutional networks. In: Proc IEEE Conf Comput Vis Pattern Recognit (CVPR), pp 2261–2269. https://doi.org/10.1109/CVPR.2017.243",
     "Sandler M, Howard A, Zhu M, Zhmoginov A, Chen L-C (2018) MobileNetV2: inverted residuals and linear bottlenecks. In: Proc IEEE/CVF Conf Comput Vis Pattern Recognit (CVPR), pp 4510–4520. https://doi.org/10.1109/CVPR.2018.00474",
     "Tan M, Le QV (2019) EfficientNet: rethinking model scaling for convolutional neural networks. In: Proc 36th Int Conf Mach Learn (ICML), pp 6105–6114",
     "Loshchilov I, Hutter F (2019) Decoupled weight decay regularization. In: Int Conf Learn Represent (ICLR). arXiv:1711.05101",
@@ -656,6 +656,17 @@ def build_supplement() -> str:
     add_table(doc, pd.DataFrame(rows, columns=["Architecture", "Native", "Replacement", "Δ macro-F1 (pp)", "Rotations improved",
                                                "p (Wilcoxon)", "p (Holm)"]),
               "Paired comparison of every replacement with the native activation over the five rotations.", "S4", font=8)
+
+    extra = os.path.join(FIG, "gradcam_efficientnet_b3_gelu.png")
+    if os.path.exists(extra):
+        doc.add_picture(extra, width=Cm(24))
+        doc.paragraphs[-1].alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p = doc.add_paragraph()
+        p.paragraph_format.line_spacing = 1.0
+        p.add_run("Fig. S1 ").bold = True
+        p.add_run("Grad-CAM heat maps of the second-best configuration, EfficientNet-B3 + GELU, for test images of "
+                  "rotation 1 (retrained on the laptop GPU with the selected learning rate of that rotation), in the same "
+                  "layout as Fig. 11 of the main text.")
 
     path = os.path.join(MS, "Supplementary_Material.docx")
     doc.save(path)
