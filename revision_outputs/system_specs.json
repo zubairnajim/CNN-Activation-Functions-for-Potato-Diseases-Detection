@@ -1,0 +1,1 @@
+{"os": "Linux 6.6.122+", "python": "3.13.15", "pytorch": "2.11.0+cu130", "torchvision": "0.26.0+cu130", "cuda": "13.0", "cudnn": 92700, "gpu": "NVIDIA A100-SXM4-40GB", "gpu_vram_gb": 39.5, "cpu": "Intel(R) Xeon(R) CPU @ 2.20GHz", "cpu_logical_cores": 12, "ram_gb": 83.5}

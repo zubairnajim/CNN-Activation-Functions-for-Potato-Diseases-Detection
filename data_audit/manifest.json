@@ -1,0 +1,4740 @@
+{
+ "description": "Curated potato tuber disease dataset and fixed stratified CV folds.",
+ "class_names": [
+  "Black Scurf",
+  "Blackleg",
+  "Common Scab",
+  "Dry Rot",
+  "Healthy Potatoes",
+  "Miscellaneous",
+  "Pink Rot"
+ ],
+ "n_folds": 5,
+ "seed": 42,
+ "dhash_threshold": 20,
+ "n_raw": 451,
+ "n_curated": 431,
+ "duplicate_groups": [
+  {
+   "group": 0,
+   "label_conflict": true,
+   "members": [
+    "Black Scurf/20.jpg",
+    "Common Scab/52.jpg"
+   ],
+   "kept": []
+  },
+  {
+   "group": 1,
+   "label_conflict": true,
+   "members": [
+    "Blackleg/3.jpg",
+    "Dry Rot/16.jpg"
+   ],
+   "kept": []
+  },
+  {
+   "group": 2,
+   "label_conflict": true,
+   "members": [
+    "Blackleg/15.jpg",
+    "Dry Rot/17.jpg"
+   ],
+   "kept": []
+  },
+  {
+   "group": 3,
+   "label_conflict": true,
+   "members": [
+    "Blackleg/28.jpg",
+    "Miscellaneous/18.jpg"
+   ],
+   "kept": []
+  },
+  {
+   "group": 4,
+   "label_conflict": false,
+   "members": [
+    "Common Scab/10.jpg",
+    "Common Scab/29.jpg"
+   ],
+   "kept": [
+    "Common Scab/10.jpg"
+   ]
+  },
+  {
+   "group": 5,
+   "label_conflict": false,
+   "members": [
+    "Common Scab/15.jpg",
+    "Common Scab/54.jpg"
+   ],
+   "kept": [
+    "Common Scab/15.jpg"
+   ]
+  },
+  {
+   "group": 6,
+   "label_conflict": false,
+   "members": [
+    "Common Scab/21.jpg",
+    "Common Scab/61.jpg"
+   ],
+   "kept": [
+    "Common Scab/61.jpg"
+   ]
+  },
+  {
+   "group": 7,
+   "label_conflict": false,
+   "members": [
+    "Common Scab/39.jpg",
+    "Common Scab/60.jpg"
+   ],
+   "kept": [
+    "Common Scab/39.jpg"
+   ]
+  },
+  {
+   "group": 8,
+   "label_conflict": false,
+   "members": [
+    "Dry Rot/2.jpg",
+    "Dry Rot/38.jpg"
+   ],
+   "kept": [
+    "Dry Rot/2.jpg"
+   ]
+  },
+  {
+   "group": 9,
+   "label_conflict": false,
+   "members": [
+    "Dry Rot/3.jpg",
+    "Dry Rot/11.jpg"
+   ],
+   "kept": [
+    "Dry Rot/3.jpg"
+   ]
+  },
+  {
+   "group": 10,
+   "label_conflict": false,
+   "members": [
+    "Healthy Potatoes/6.jpg",
+    "Healthy Potatoes/16.jpg",
+    "Healthy Potatoes/54.jpg"
+   ],
+   "kept": [
+    "Healthy Potatoes/6.jpg"
+   ]
+  },
+  {
+   "group": 11,
+   "label_conflict": false,
+   "members": [
+    "Healthy Potatoes/7.jpg",
+    "Healthy Potatoes/9.jpg"
+   ],
+   "kept": [
+    "Healthy Potatoes/7.jpg"
+   ]
+  },
+  {
+   "group": 12,
+   "label_conflict": false,
+   "members": [
+    "Miscellaneous/54.jpg",
+    "Miscellaneous/58.jpg"
+   ],
+   "kept": [
+    "Miscellaneous/54.jpg"
+   ]
+  },
+  {
+   "group": 13,
+   "label_conflict": false,
+   "members": [
+    "Pink Rot/4.jpg",
+    "Pink Rot/29.jpg"
+   ],
+   "kept": [
+    "Pink Rot/4.jpg"
+   ]
+  },
+  {
+   "group": 14,
+   "label_conflict": false,
+   "members": [
+    "Pink Rot/15.jpg",
+    "Pink Rot/30.jpg"
+   ],
+   "kept": [
+    "Pink Rot/15.jpg"
+   ]
+  }
+ ],
+ "related_groups": [
+  [
+   "Black Scurf/43.jpg",
+   "Black Scurf/49.jpg",
+   "Black Scurf/50.jpg"
+  ],
+  [
+   "Black Scurf/51.jpg",
+   "Black Scurf/52.jpg",
+   "Black Scurf/53.jpg",
+   "Black Scurf/54.jpg",
+   "Black Scurf/55.jpg",
+   "Black Scurf/56.jpg"
+  ],
+  [
+   "Pink Rot/9.jpg",
+   "Pink Rot/13.jpg"
+  ],
+  [
+   "Pink Rot/8.jpg",
+   "Pink Rot/24.jpg"
+  ],
+  [
+   "Miscellaneous/6.jpg",
+   "Miscellaneous/7.jpg"
+  ],
+  [
+   "Miscellaneous/22.jpg",
+   "Miscellaneous/24.jpg"
+  ],
+  [
+   "Miscellaneous/21.jpg",
+   "Miscellaneous/27.jpg"
+  ],
+  [
+   "Miscellaneous/71.jpg",
+   "Miscellaneous/72.jpg"
+  ],
+  [
+   "Common Scab/44.jpg",
+   "Common Scab/45.jpg"
+  ],
+  [
+   "Dry Rot/58.jpg",
+   "Dry Rot/59.jpg"
+  ],
+  [
+   "Blackleg/18.jpeg",
+   "Blackleg/19.jpg"
+  ]
+ ],
+ "images": [
+  {
+   "path": "Black Scurf/1.jpg",
+   "label": 0,
+   "md5": "175962751a9eb41dc926c9183e820b13",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Black Scurf/2.jpg",
+   "label": 0,
+   "md5": "3640d2432a32fbf423676edb6f695edc",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Black Scurf/3.jpg",
+   "label": 0,
+   "md5": "c8f8930de7d084ffe7be801e5b13aa15",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Black Scurf/4.jpg",
+   "label": 0,
+   "md5": "1cced35b06ef364eed4d25cd72ece73e",
+   "width": 650,
+   "height": 497,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Black Scurf/5.jpg",
+   "label": 0,
+   "md5": "01fa52a5146ff66961d370fbf9ca4153",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Black Scurf/6.jpg",
+   "label": 0,
+   "md5": "3dc695d8e150cebb5fb37a85d3e7bada",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Black Scurf/7.jpg",
+   "label": 0,
+   "md5": "28e748d7179780f4b762bb58cfbc3dd3",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Black Scurf/8.jpg",
+   "label": 0,
+   "md5": "75b18cefef171d831badf754e7daa035",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Black Scurf/9.jpg",
+   "label": 0,
+   "md5": "e55775e51623546237980305bb3ed2f5",
+   "width": 900,
+   "height": 507,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Black Scurf/10.jpg",
+   "label": 0,
+   "md5": "b8cfbcd83ba2a710b0cb2b23036a7265",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Black Scurf/11.jpg",
+   "label": 0,
+   "md5": "321e9822c159aeee06b6733c7e854ff9",
+   "width": 244,
+   "height": 215,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Black Scurf/12.jpg",
+   "label": 0,
+   "md5": "9cd20875558916215942e8a0fe6e9e3c",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Black Scurf/13.jpg",
+   "label": 0,
+   "md5": "d24bb3f6c60fce34fc745394f1bdb417",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Black Scurf/14.jpg",
+   "label": 0,
+   "md5": "7ec9354198978cc8a3b8428f7e82040c",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Black Scurf/15.jpg",
+   "label": 0,
+   "md5": "9dc2a2f4c4ff39455512405806707b46",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Black Scurf/16.jpg",
+   "label": 0,
+   "md5": "9c75dfcdde9c5f64607b8f8131e1d803",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Black Scurf/17.jpg",
+   "label": 0,
+   "md5": "cd5d98b42dccbd1204cc390bf63e694c",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Black Scurf/18.jpg",
+   "label": 0,
+   "md5": "11e1aa2abec2c61bee2ec4ea0bde955a",
+   "width": 645,
+   "height": 376,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Black Scurf/19.jpg",
+   "label": 0,
+   "md5": "47bc817ae92d5cce4fe5804c224c3abc",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Black Scurf/20.jpg",
+   "label": 0,
+   "md5": "bcdc479e4770e6fa51fac5798b9ab0d0",
+   "width": 224,
+   "height": 224,
+   "status": "excluded_label_conflict",
+   "related_group": null,
+   "fold": -1
+  },
+  {
+   "path": "Black Scurf/21.jpg",
+   "label": 0,
+   "md5": "1112232a023dc0d0ddd795cbe6624973",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Black Scurf/22.jpg",
+   "label": 0,
+   "md5": "88dc28233cffbae189fc33c496ce0efe",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Black Scurf/23.jpg",
+   "label": 0,
+   "md5": "bb6c773a2171f2fe0f934ba134092319",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Black Scurf/24.jpg",
+   "label": 0,
+   "md5": "36b556bd736bcc57e6e69c5fc0681c86",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Black Scurf/25.jpg",
+   "label": 0,
+   "md5": "a30d27ad05cec35c07c2693ce02ad690",
+   "width": 647,
+   "height": 398,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Black Scurf/26.jpg",
+   "label": 0,
+   "md5": "735ef15dc4990cb42d9c435c0c40fb86",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Black Scurf/27.jpg",
+   "label": 0,
+   "md5": "70c9985fcb5d9d88a979604dd2283abc",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Black Scurf/28.jpg",
+   "label": 0,
+   "md5": "92a697b2246541b4dbae73442f9af7e3",
+   "width": 485,
+   "height": 417,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Black Scurf/29.jpg",
+   "label": 0,
+   "md5": "1c3a688e217e22a6e668013ad395949b",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Black Scurf/30.jpg",
+   "label": 0,
+   "md5": "4dfe67a21a646d0b2be794601a706866",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Black Scurf/31.jpg",
+   "label": 0,
+   "md5": "77cd7b423681f5e48f227b05f1dea170",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Black Scurf/32.jpg",
+   "label": 0,
+   "md5": "891938177f6a32f0e9c676d0c3c35de9",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Black Scurf/33.jpg",
+   "label": 0,
+   "md5": "7f8c17fc30752dfdea292a12556379db",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Black Scurf/34.jpg",
+   "label": 0,
+   "md5": "3ffae52966c6b5e971855f347a39e286",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Black Scurf/35.jpg",
+   "label": 0,
+   "md5": "3756460f141fb483f5a952fd819f2b37",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Black Scurf/36.jpg",
+   "label": 0,
+   "md5": "bc9263fc6cf8f6ea4acb9181cd6254ff",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Black Scurf/37.jpg",
+   "label": 0,
+   "md5": "0f126ab39a1c5b78f8d82c358c05d415",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Black Scurf/38.jpg",
+   "label": 0,
+   "md5": "d5ab80c3d7bca2d5c4402776a6af7576",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Black Scurf/39.jpg",
+   "label": 0,
+   "md5": "7b2fa7bb437e2f8604681e4090e9c74c",
+   "width": 171,
+   "height": 209,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Black Scurf/40.jpg",
+   "label": 0,
+   "md5": "17ad934b4bd6cdced52bd6c71b4bac0d",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Black Scurf/41.jpg",
+   "label": 0,
+   "md5": "511546453fce982aaa47f8af1d143612",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Black Scurf/42.jpg",
+   "label": 0,
+   "md5": "c967a4c2745bb23046b4c1c6c2abb8ec",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Black Scurf/43.jpg",
+   "label": 0,
+   "md5": "2bdce60451301b302a3cc933f7168b7b",
+   "width": 217,
+   "height": 212,
+   "status": "kept",
+   "related_group": 0,
+   "fold": 1
+  },
+  {
+   "path": "Black Scurf/44.jpg",
+   "label": 0,
+   "md5": "9a5e35b2b96b63bc6541debefdbb23fa",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Black Scurf/45.jpg",
+   "label": 0,
+   "md5": "c1511f19eee863608e3f3d4bbcd6ca92",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Black Scurf/46.jpg",
+   "label": 0,
+   "md5": "a49420b97c9ecbcec296c14125c13c15",
+   "width": 516,
+   "height": 597,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Black Scurf/47.jpg",
+   "label": 0,
+   "md5": "4acc47b824da48ad1415f19106a0504e",
+   "width": 322,
+   "height": 157,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Black Scurf/48.jpg",
+   "label": 0,
+   "md5": "04368619428a7e10a84225c1fea0b031",
+   "width": 500,
+   "height": 500,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Black Scurf/49.jpg",
+   "label": 0,
+   "md5": "b4720479ecb5031bd51a39433eee0aea",
+   "width": 206,
+   "height": 211,
+   "status": "kept",
+   "related_group": 0,
+   "fold": 1
+  },
+  {
+   "path": "Black Scurf/50.jpg",
+   "label": 0,
+   "md5": "9e6843f21dc5c724b36f4cef3051b72a",
+   "width": 210,
+   "height": 210,
+   "status": "kept",
+   "related_group": 0,
+   "fold": 1
+  },
+  {
+   "path": "Black Scurf/51.jpg",
+   "label": 0,
+   "md5": "a42fc4d06ddb4f06f0e17fbd9195568a",
+   "width": 224,
+   "height": 256,
+   "status": "kept",
+   "related_group": 1,
+   "fold": 0
+  },
+  {
+   "path": "Black Scurf/52.jpg",
+   "label": 0,
+   "md5": "77544285f9cfdaed57196f55fbba9fc4",
+   "width": 265,
+   "height": 238,
+   "status": "kept",
+   "related_group": 1,
+   "fold": 0
+  },
+  {
+   "path": "Black Scurf/53.jpg",
+   "label": 0,
+   "md5": "ff96227ada8f4db6073dfa6412bbeea8",
+   "width": 225,
+   "height": 224,
+   "status": "kept",
+   "related_group": 1,
+   "fold": 0
+  },
+  {
+   "path": "Black Scurf/54.jpg",
+   "label": 0,
+   "md5": "2a68750d1dda113fed754b1e0977afb7",
+   "width": 294,
+   "height": 286,
+   "status": "kept",
+   "related_group": 1,
+   "fold": 0
+  },
+  {
+   "path": "Black Scurf/55.jpg",
+   "label": 0,
+   "md5": "7b08beb594a33915e1f6363a1450f377",
+   "width": 223,
+   "height": 271,
+   "status": "kept",
+   "related_group": 1,
+   "fold": 0
+  },
+  {
+   "path": "Black Scurf/56.jpg",
+   "label": 0,
+   "md5": "d46f48257318c03e69b362126143f52e",
+   "width": 205,
+   "height": 311,
+   "status": "kept",
+   "related_group": 1,
+   "fold": 0
+  },
+  {
+   "path": "Black Scurf/57.jpeg",
+   "label": 0,
+   "md5": "2df5e6116ca155bed87fa13ddc7682d9",
+   "width": 250,
+   "height": 227,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Black Scurf/58.jpg",
+   "label": 0,
+   "md5": "d94d21716ffe58ea81af454527e255a5",
+   "width": 225,
+   "height": 225,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Blackleg/1.jpg",
+   "label": 1,
+   "md5": "8ab0eaf20061408e071f661013f15f08",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Blackleg/2.jpg",
+   "label": 1,
+   "md5": "a5461b69e83dd98f4b5405c1b8459007",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Blackleg/3.jpg",
+   "label": 1,
+   "md5": "4a0172e667d1ff115a774b5bc3ab803c",
+   "width": 224,
+   "height": 224,
+   "status": "excluded_label_conflict",
+   "related_group": null,
+   "fold": -1
+  },
+  {
+   "path": "Blackleg/4.jpg",
+   "label": 1,
+   "md5": "5098365b260ae63f53cdcf38571305b6",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Blackleg/5.jpg",
+   "label": 1,
+   "md5": "c8c159ec01bbafc1c426741931461431",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Blackleg/6.jpg",
+   "label": 1,
+   "md5": "d82e08e6d20e0c0c2bdef41efb3b021f",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Blackleg/7.jpg",
+   "label": 1,
+   "md5": "a3b137fece8236a0b6d8a6f13a272f21",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Blackleg/8.jpg",
+   "label": 1,
+   "md5": "9bfcf53a7d38dd21f9fb8b4fa54bdabb",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Blackleg/9.jpg",
+   "label": 1,
+   "md5": "ba7306d538dcfbddb15cdda3bd388725",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Blackleg/10.jpg",
+   "label": 1,
+   "md5": "e6dcdcb4711a124f20244678e3d04a27",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Blackleg/11.jpg",
+   "label": 1,
+   "md5": "d6206851deb41367bb0f710b08c756d9",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Blackleg/12.jpg",
+   "label": 1,
+   "md5": "cdfce5f652217ac15c61e9a749c829c3",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Blackleg/13.jpg",
+   "label": 1,
+   "md5": "3fe4a94e3204a53135d2353cbfd23f42",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Blackleg/14.jpg",
+   "label": 1,
+   "md5": "3c47a3e82aa08d817bd70d4f0ce1ad31",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Blackleg/15.jpg",
+   "label": 1,
+   "md5": "60260ee845af85c342b30343764f19e2",
+   "width": 224,
+   "height": 224,
+   "status": "excluded_label_conflict",
+   "related_group": null,
+   "fold": -1
+  },
+  {
+   "path": "Blackleg/16.jpg",
+   "label": 1,
+   "md5": "16ff8dec06e87e08dcd1da5c5450dc52",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Blackleg/17.jpg",
+   "label": 1,
+   "md5": "3c43c7b1aae48e560ad64d935dfad09d",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Blackleg/18.jpeg",
+   "label": 1,
+   "md5": "006ff981d87aaa4c3f43e01bb26f96a4",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": 10,
+   "fold": 2
+  },
+  {
+   "path": "Blackleg/19.jpg",
+   "label": 1,
+   "md5": "1e529c6623d1fad99fc62d48c2bd2dc8",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": 10,
+   "fold": 2
+  },
+  {
+   "path": "Blackleg/20.jpg",
+   "label": 1,
+   "md5": "d0e7912ad88ae49f9943ff32a0d5631d",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Blackleg/21.jpg",
+   "label": 1,
+   "md5": "6cd0f756880f2a45652e5dc7a9dac6aa",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Blackleg/22.jpg",
+   "label": 1,
+   "md5": "d247de7ab4f95d85c66effeddae974d0",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Blackleg/23.jpg",
+   "label": 1,
+   "md5": "ca59d25c969ac6b8bdf17827416b704c",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Blackleg/24.jpg",
+   "label": 1,
+   "md5": "f0c49347885c87170254ea520bded25f",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Blackleg/25.jpg",
+   "label": 1,
+   "md5": "c52ba70c6104482db01b599826489d13",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Blackleg/26.jpg",
+   "label": 1,
+   "md5": "f28585addba64c4a949294e101d4d09c",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Blackleg/27.jpg",
+   "label": 1,
+   "md5": "dba275350d0897c79e217c8b13b7c0c0",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Blackleg/28.jpg",
+   "label": 1,
+   "md5": "59168b08d1abeecd79aadf71912f43cf",
+   "width": 224,
+   "height": 224,
+   "status": "excluded_label_conflict",
+   "related_group": null,
+   "fold": -1
+  },
+  {
+   "path": "Blackleg/29.jpg",
+   "label": 1,
+   "md5": "7ef9c888760cee3551d962bfdeef401d",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Blackleg/30.jpg",
+   "label": 1,
+   "md5": "68e237995e78910c6d4527fd6220bbc3",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Blackleg/31.jpg",
+   "label": 1,
+   "md5": "79efa2a296cceb569e1834a0c92c4cdf",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Blackleg/32.jpg",
+   "label": 1,
+   "md5": "075f7f17c82bf520c96b7aab41c86fa7",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Blackleg/33.jpg",
+   "label": 1,
+   "md5": "8c4fc51e22a94031789546b46ab4fd50",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Blackleg/34.jpg",
+   "label": 1,
+   "md5": "59d26c85247cb1d5a61603595b75ec5c",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Blackleg/35.jpeg",
+   "label": 1,
+   "md5": "b29fc71e0ab84799fa8acb5353a3e8de",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Blackleg/36.jpg",
+   "label": 1,
+   "md5": "435e6827690d81880ca87d6edd007f6c",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Blackleg/37.jpeg",
+   "label": 1,
+   "md5": "330dc50cd0a4f619fa03ae4b956b8f93",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Blackleg/38.jpg",
+   "label": 1,
+   "md5": "3984d47d3559f4eb44b6056681590cd0",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Blackleg/39.jpg",
+   "label": 1,
+   "md5": "6b6a9adcf2531482b52689bd704bfcb6",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Blackleg/40.jpg",
+   "label": 1,
+   "md5": "25b90b9982f8d61bad049fe8fd111156",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Blackleg/41.jpg",
+   "label": 1,
+   "md5": "6eea4de456f4a9a2d6cc21942369196b",
+   "width": 468,
+   "height": 315,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Blackleg/42.jpg",
+   "label": 1,
+   "md5": "885a45a01b7db895ccfc87b2f8cf107c",
+   "width": 297,
+   "height": 169,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Blackleg/43.jpg",
+   "label": 1,
+   "md5": "0b2a031a23d2460e133e20fb4c3d9b73",
+   "width": 394,
+   "height": 450,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Blackleg/44.jpg",
+   "label": 1,
+   "md5": "c0298d4a248bc6b3cfa92f772c8f7a61",
+   "width": 138,
+   "height": 269,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Blackleg/45.jpg",
+   "label": 1,
+   "md5": "56f52cf12be54af2c044413cc6eee571",
+   "width": 1021,
+   "height": 680,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Blackleg/46.jpg",
+   "label": 1,
+   "md5": "3b2b4abdf5052248b170325469901f11",
+   "width": 650,
+   "height": 679,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Blackleg/47.jpg",
+   "label": 1,
+   "md5": "f930ddbc74a7c2ece8c2553520022920",
+   "width": 335,
+   "height": 262,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Blackleg/48.jpg",
+   "label": 1,
+   "md5": "f3b8f59dafa7d4cfef5c6106fd6c411e",
+   "width": 303,
+   "height": 202,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Blackleg/49.jpg",
+   "label": 1,
+   "md5": "c730e8a6ac32813141357ecf0c603cab",
+   "width": 250,
+   "height": 202,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Blackleg/50.jpg",
+   "label": 1,
+   "md5": "07b790681be2719b61baa3d646330730",
+   "width": 400,
+   "height": 279,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Blackleg/51.jpg",
+   "label": 1,
+   "md5": "c7f244a6e83ae7c27ce4ec8305874cd4",
+   "width": 900,
+   "height": 597,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Blackleg/52.jpg",
+   "label": 1,
+   "md5": "e01f1e8e4ab0d34342cdf876b14bb6ea",
+   "width": 338,
+   "height": 253,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Blackleg/53.jpg",
+   "label": 1,
+   "md5": "0ee88b472c8f83b1a36a65b633b0a85c",
+   "width": 304,
+   "height": 252,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Blackleg/54.jpg",
+   "label": 1,
+   "md5": "32d1ce75686fc7541d36ad87b0921b52",
+   "width": 1770,
+   "height": 1374,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Blackleg/55.jpg",
+   "label": 1,
+   "md5": "ef9d7f7582b7c5a82dbd8c01bd8dc202",
+   "width": 1556,
+   "height": 1326,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Blackleg/56.jpg",
+   "label": 1,
+   "md5": "6fc2183b345bf476e1d59d7b6910d9a3",
+   "width": 481,
+   "height": 637,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Blackleg/57.jpg",
+   "label": 1,
+   "md5": "f1a3d01616da01d82fcd3cd9783dfb1b",
+   "width": 335,
+   "height": 254,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Blackleg/58.jpg",
+   "label": 1,
+   "md5": "06cde88dfde312ed5742933ee8eb47b2",
+   "width": 335,
+   "height": 253,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Blackleg/59.jpg",
+   "label": 1,
+   "md5": "2e42b193542d6c949bb69f526f6e8b07",
+   "width": 255,
+   "height": 313,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Blackleg/60.jpg",
+   "label": 1,
+   "md5": "1ac95bece4b2c0a01dd753a1e3aa86b7",
+   "width": 1000,
+   "height": 838,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Common Scab/1.jpg",
+   "label": 2,
+   "md5": "bef11650cd62c6b4c3a67fd668353c6c",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Common Scab/2.jpg",
+   "label": 2,
+   "md5": "46d6ee56338bbdfefb07dc7a72d57cd4",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Common Scab/3.jpg",
+   "label": 2,
+   "md5": "5b7a376133e98eebb2c718f78645e2d7",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Common Scab/4.jpg",
+   "label": 2,
+   "md5": "671c3d73efbe51e7118ac654a4db5910",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Common Scab/5.jpg",
+   "label": 2,
+   "md5": "a81337e8e0b10fa510d47e6de3e2ba83",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Common Scab/6.jpg",
+   "label": 2,
+   "md5": "4d85d923a98b352e74149f3adad0a3a9",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Common Scab/7.jpg",
+   "label": 2,
+   "md5": "e2f5239ad0e1d4da4205a6f70fb8c920",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Common Scab/8.jpg",
+   "label": 2,
+   "md5": "cd4864c4bf68ef3d92181cbc730bfca4",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Common Scab/9.jpg",
+   "label": 2,
+   "md5": "bb367e850aee8ccf736f6c773c765d34",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Common Scab/10.jpg",
+   "label": 2,
+   "md5": "41c598ec4261238c9441849bf6965c27",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Common Scab/11.jpg",
+   "label": 2,
+   "md5": "27c93c0e8664b54b612dedc06ad2b9e2",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Common Scab/12.jpg",
+   "label": 2,
+   "md5": "6fb9759abd00d631864a2f6df73e66c1",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Common Scab/13.jpg",
+   "label": 2,
+   "md5": "2440cf5270e19475abd1837dbafaf998",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Common Scab/14.jpg",
+   "label": 2,
+   "md5": "cd5f1ac8f5a84037a6eae62cb17b99d0",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Common Scab/15.jpg",
+   "label": 2,
+   "md5": "5231e5887ee209bae335bc4d020308ed",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Common Scab/16.jpg",
+   "label": 2,
+   "md5": "24110faf8970204045670697b709c7bc",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Common Scab/17.jpg",
+   "label": 2,
+   "md5": "b7c427b249ab6501956e7430992c6c77",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Common Scab/18.jpg",
+   "label": 2,
+   "md5": "7eaac1d7d903e5a9f4747754a22c0333",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Common Scab/19.jpg",
+   "label": 2,
+   "md5": "8758268f020f80e0c0affcd0a292c1fb",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Common Scab/20.jpg",
+   "label": 2,
+   "md5": "5030bbe69c24513f0191be8e5deccad1",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Common Scab/21.jpg",
+   "label": 2,
+   "md5": "dda1ff175f2d57eb206b6745438c479b",
+   "width": 224,
+   "height": 224,
+   "status": "excluded_duplicate",
+   "related_group": null,
+   "fold": -1
+  },
+  {
+   "path": "Common Scab/22.jpg",
+   "label": 2,
+   "md5": "0e0daa35d878f6874ed0cbf8fab5ff02",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Common Scab/23.jpg",
+   "label": 2,
+   "md5": "892e20ebd8535d69aea0627a22e2bd31",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Common Scab/24.jpg",
+   "label": 2,
+   "md5": "d61231b1c54ed47a472c05902d23129e",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Common Scab/25.jpg",
+   "label": 2,
+   "md5": "7adb54a2c621b47a0549e3b57ee00336",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Common Scab/26.jpg",
+   "label": 2,
+   "md5": "f7399df94fd3f297ff8f7b8989d8ae09",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Common Scab/27.jpg",
+   "label": 2,
+   "md5": "89d8a68013516b6dea1dcd9aac098398",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Common Scab/28.jpg",
+   "label": 2,
+   "md5": "86c94420e5e931ca56148c452e7ffb84",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Common Scab/29.jpg",
+   "label": 2,
+   "md5": "bf77b1ff563871e79d7e8c1cb751f400",
+   "width": 224,
+   "height": 224,
+   "status": "excluded_duplicate",
+   "related_group": null,
+   "fold": -1
+  },
+  {
+   "path": "Common Scab/30.jpg",
+   "label": 2,
+   "md5": "db9962a17026cf0961996ba9b622db2e",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Common Scab/31.jpg",
+   "label": 2,
+   "md5": "c8e5a55723960d39ea68c878b91a6d2c",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Common Scab/32.jpg",
+   "label": 2,
+   "md5": "fe4b392808e5607ee4ceec1f7f9d29e8",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Common Scab/33.jpg",
+   "label": 2,
+   "md5": "0bc5673d514e205457752ee82244a442",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Common Scab/34.jpg",
+   "label": 2,
+   "md5": "2a04a801e3e52dde1f78c6bce71bf3be",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Common Scab/35.jpg",
+   "label": 2,
+   "md5": "9e3295d9318f91e9b52f3f875fad1a17",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Common Scab/36.jpg",
+   "label": 2,
+   "md5": "ba96bb07c7a834e598ff08a91e6529d9",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Common Scab/37.jpg",
+   "label": 2,
+   "md5": "d24d504e0c7b0969905a3f3ebcfd1bea",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Common Scab/38.jpg",
+   "label": 2,
+   "md5": "fcd6d337bf321c8eab57aff9bcf70131",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Common Scab/39.jpg",
+   "label": 2,
+   "md5": "df71e7e94bc7b0ee88f919ff90645bb8",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Common Scab/40.jpg",
+   "label": 2,
+   "md5": "ef11b292643e378bf948fc552285f4d6",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Common Scab/41.jpg",
+   "label": 2,
+   "md5": "4927598bb5d9c1988f715711cccc4ddd",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Common Scab/42.jpeg",
+   "label": 2,
+   "md5": "9e2e439427e0c16a2094eb7bebbb5384",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Common Scab/43.jpg",
+   "label": 2,
+   "md5": "9b8000074c44d930a41efad0aaf97729",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Common Scab/44.jpg",
+   "label": 2,
+   "md5": "78fb295870b4177d1bdf85d2209259a0",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": 8,
+   "fold": 4
+  },
+  {
+   "path": "Common Scab/45.jpg",
+   "label": 2,
+   "md5": "eef7ca3bcd22132c0f0709cd6779560f",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": 8,
+   "fold": 4
+  },
+  {
+   "path": "Common Scab/46.jpg",
+   "label": 2,
+   "md5": "b3cda43f14666b9b34d0a895ffdf5545",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Common Scab/47.jpg",
+   "label": 2,
+   "md5": "bcf33432a21d0ed1c612eabf9eba1879",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Common Scab/48.jpg",
+   "label": 2,
+   "md5": "9e0756ba7991d3b6e97c9ca8c4bc3af9",
+   "width": 318,
+   "height": 159,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Common Scab/49.jpg",
+   "label": 2,
+   "md5": "b48dccdc6f31c5b75eba65151b1ef477",
+   "width": 183,
+   "height": 137,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Common Scab/50.jpg",
+   "label": 2,
+   "md5": "3d125782af9538a790f3bb272bf0f493",
+   "width": 183,
+   "height": 123,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Common Scab/51.jpg",
+   "label": 2,
+   "md5": "2bfbbe5d7b30f5efcbb2f6970b6e2d8a",
+   "width": 650,
+   "height": 457,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Common Scab/52.jpg",
+   "label": 2,
+   "md5": "67f3394114117cc8fa8f93d1baeff595",
+   "width": 182,
+   "height": 137,
+   "status": "excluded_label_conflict",
+   "related_group": null,
+   "fold": -1
+  },
+  {
+   "path": "Common Scab/53.jpg",
+   "label": 2,
+   "md5": "45c0674fd9a7c21770e9e2ace22fb0d1",
+   "width": 280,
+   "height": 436,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Common Scab/54.jpg",
+   "label": 2,
+   "md5": "c84959e13971952e3d12964517e8ffe4",
+   "width": 183,
+   "height": 164,
+   "status": "excluded_duplicate",
+   "related_group": null,
+   "fold": -1
+  },
+  {
+   "path": "Common Scab/55.jpg",
+   "label": 2,
+   "md5": "43195c304010307b7d18b980714b4d88",
+   "width": 183,
+   "height": 137,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Common Scab/56.jpg",
+   "label": 2,
+   "md5": "ffbcb7b574d0f3995639628d233bc182",
+   "width": 640,
+   "height": 480,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Common Scab/57.jpg",
+   "label": 2,
+   "md5": "5e5aa1f8ed92dff5a89579f5b6fbca3c",
+   "width": 547,
+   "height": 343,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Common Scab/58.jpg",
+   "label": 2,
+   "md5": "cf23f98804c8e6951cb2c184db5555be",
+   "width": 300,
+   "height": 194,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Common Scab/59.jpg",
+   "label": 2,
+   "md5": "f5b5393c4995f60ee3e5cd344996a0d4",
+   "width": 646,
+   "height": 450,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Common Scab/60.jpg",
+   "label": 2,
+   "md5": "026113f1fc5f26db77f2753935109c31",
+   "width": 240,
+   "height": 200,
+   "status": "excluded_duplicate",
+   "related_group": null,
+   "fold": -1
+  },
+  {
+   "path": "Common Scab/61.jpg",
+   "label": 2,
+   "md5": "b16d186f1cbac69f445e6713e3917c99",
+   "width": 1024,
+   "height": 674,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Common Scab/62.jpg",
+   "label": 2,
+   "md5": "31df4f75b6f79267d105303e5a73469b",
+   "width": 685,
+   "height": 532,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Dry Rot/1.jpg",
+   "label": 3,
+   "md5": "2e81081835b8ffd76f8f693003c2fe10",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Dry Rot/2.jpg",
+   "label": 3,
+   "md5": "e35fa4ca4e246b64a73459bbae069a70",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Dry Rot/3.jpg",
+   "label": 3,
+   "md5": "b69ba5653d78abdf630e913d5b272e39",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Dry Rot/4.jpg",
+   "label": 3,
+   "md5": "be699f4bd3ddaa4f455aaae82466ed31",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Dry Rot/5.jpg",
+   "label": 3,
+   "md5": "0b624d2ada89b5fbe6c74daed24e2d9c",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Dry Rot/6.jpg",
+   "label": 3,
+   "md5": "aab988bc7bc0ced2a33e621916dfc9a9",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Dry Rot/7.jpg",
+   "label": 3,
+   "md5": "92a0168e9c308e83be3a719982dd8f85",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Dry Rot/8.jpg",
+   "label": 3,
+   "md5": "4f9b08fd28c8423ddff0c6957a518152",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Dry Rot/9.jpg",
+   "label": 3,
+   "md5": "105c3a89f9c1035fb38021da474ecc13",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Dry Rot/10.jpg",
+   "label": 3,
+   "md5": "5a6e977ae1f3d6413c81b7dd46967663",
+   "width": 333,
+   "height": 365,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Dry Rot/11.jpg",
+   "label": 3,
+   "md5": "803f219cb5938e2918977b0f1367a2ea",
+   "width": 224,
+   "height": 224,
+   "status": "excluded_duplicate",
+   "related_group": null,
+   "fold": -1
+  },
+  {
+   "path": "Dry Rot/12.jpg",
+   "label": 3,
+   "md5": "872fc63c3b0cc53913c858871c72cfa6",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Dry Rot/13.jpg",
+   "label": 3,
+   "md5": "744d17b9dfbd34e48c58a0f35b047467",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Dry Rot/14.jpg",
+   "label": 3,
+   "md5": "9bde9bc3da1c8e1fd949d302e9cc3300",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Dry Rot/15.jpg",
+   "label": 3,
+   "md5": "724f30f3361c65f1626d6fa5c7c34515",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Dry Rot/16.jpg",
+   "label": 3,
+   "md5": "64dee25a43b9211a9733d1dc69a4ff96",
+   "width": 224,
+   "height": 224,
+   "status": "excluded_label_conflict",
+   "related_group": null,
+   "fold": -1
+  },
+  {
+   "path": "Dry Rot/17.jpg",
+   "label": 3,
+   "md5": "117310325518289668010413ac38b192",
+   "width": 224,
+   "height": 224,
+   "status": "excluded_label_conflict",
+   "related_group": null,
+   "fold": -1
+  },
+  {
+   "path": "Dry Rot/18.jpg",
+   "label": 3,
+   "md5": "16128de210178b2f0130c44e0cb0f438",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Dry Rot/19.jpg",
+   "label": 3,
+   "md5": "d6d2ac98b7791ae0fd221e558ab0ae40",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Dry Rot/20.jpg",
+   "label": 3,
+   "md5": "642699aa554f0f8ee63e47987bf3ad68",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Dry Rot/21.jpg",
+   "label": 3,
+   "md5": "f47858eee9f020e79a25e507d57ea04d",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Dry Rot/22.jpg",
+   "label": 3,
+   "md5": "d82824e14bdbb44bd9d16af1e54a99b6",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Dry Rot/23.jpg",
+   "label": 3,
+   "md5": "372c4924a689189f26d06592c1d72d04",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Dry Rot/24.jpg",
+   "label": 3,
+   "md5": "9f42c6be5ca05a62045f78949792c197",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Dry Rot/25.jpg",
+   "label": 3,
+   "md5": "d18de1d658994561be331d5ad468c90d",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Dry Rot/26.jpg",
+   "label": 3,
+   "md5": "51a7a5dbc4d445898fe1e00cdf92f561",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Dry Rot/27.jpg",
+   "label": 3,
+   "md5": "bfe069d01259464a25b0ec8f5e65ef26",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Dry Rot/28.jpg",
+   "label": 3,
+   "md5": "ddf4c7831ef92431d8b44b3e7eb05ac6",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Dry Rot/29.jpg",
+   "label": 3,
+   "md5": "a4597d344a67fbb3cfccbaeea12fbecd",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Dry Rot/30.jpg",
+   "label": 3,
+   "md5": "7ec579554d97b7ce6ca5ea9449aa5f5f",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Dry Rot/31.jpg",
+   "label": 3,
+   "md5": "a43a2c78042e65dcfa435121390e2126",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Dry Rot/32.jpg",
+   "label": 3,
+   "md5": "9801e1eacb4d44c485a1006ed0c37249",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Dry Rot/33.jpg",
+   "label": 3,
+   "md5": "def4c892003764560e1ac0fb26acfef4",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Dry Rot/34.jpg",
+   "label": 3,
+   "md5": "8382d8b342fa0cae63ddb7593a83220e",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Dry Rot/35.jpg",
+   "label": 3,
+   "md5": "60fec602ebe29ef475742fe660692c2a",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Dry Rot/36.jpg",
+   "label": 3,
+   "md5": "6fa66da7b7e42d21d401896cb312d2a1",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Dry Rot/37.jpg",
+   "label": 3,
+   "md5": "d60b1ff975aa609dd862e440f2526913",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Dry Rot/38.jpg",
+   "label": 3,
+   "md5": "488687ac9bf3ee12299c22625b6537b1",
+   "width": 224,
+   "height": 224,
+   "status": "excluded_duplicate",
+   "related_group": null,
+   "fold": -1
+  },
+  {
+   "path": "Dry Rot/39.jpg",
+   "label": 3,
+   "md5": "d71d0ea69cadc753e7619ded7d46d157",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Dry Rot/40.jpg",
+   "label": 3,
+   "md5": "377f8c561412a5ae8a435f2dfd328337",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Dry Rot/41.jpg",
+   "label": 3,
+   "md5": "09cd20aeb0619d317569c3ea034f14b1",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Dry Rot/42.jpg",
+   "label": 3,
+   "md5": "c5e2afb021f18c0d4e769e1fc600dc4c",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Dry Rot/43.jpg",
+   "label": 3,
+   "md5": "8aa856f15d45b7d01f63a40983fff9c1",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Dry Rot/44.jpg",
+   "label": 3,
+   "md5": "352b5e6d75b84ff45b496e6b02518c40",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Dry Rot/45.jpg",
+   "label": 3,
+   "md5": "3e8f23472bc1a780f0a698b303559e18",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Dry Rot/46.png",
+   "label": 3,
+   "md5": "777abec78e70e1aec6f92e807bae6274",
+   "width": 548,
+   "height": 365,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Dry Rot/47.jpg",
+   "label": 3,
+   "md5": "dbc487f3fcbfcb533e54771cbaa34d6e",
+   "width": 517,
+   "height": 327,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Dry Rot/48.jpg",
+   "label": 3,
+   "md5": "a170c95f71f9e2d6806d2b2310ca4172",
+   "width": 238,
+   "height": 318,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Dry Rot/49.jpg",
+   "label": 3,
+   "md5": "d2205f68d530e8729ad89cb3f231fdea",
+   "width": 1068,
+   "height": 580,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Dry Rot/50.jpg",
+   "label": 3,
+   "md5": "76b023c47ac46df956ff8b6d79eaf02b",
+   "width": 427,
+   "height": 320,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Dry Rot/51.jpg",
+   "label": 3,
+   "md5": "150b4f8a825f324627ecb577f7e6c9ad",
+   "width": 257,
+   "height": 196,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Dry Rot/52.jpg",
+   "label": 3,
+   "md5": "08e86b6efe1a108860c2c4a3b92cabfe",
+   "width": 327,
+   "height": 262,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Dry Rot/53.jpg",
+   "label": 3,
+   "md5": "0197cdab2a099f23b533db522e875641",
+   "width": 640,
+   "height": 447,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Dry Rot/54.jpg",
+   "label": 3,
+   "md5": "eadc6f2c91f9ee96ed924199af9973e8",
+   "width": 220,
+   "height": 318,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Dry Rot/55.jpg",
+   "label": 3,
+   "md5": "d368074e0a68be4638c11f69212e42b1",
+   "width": 224,
+   "height": 318,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Dry Rot/56.jpg",
+   "label": 3,
+   "md5": "51e91c0c6c691623e73bdd642c70ef6c",
+   "width": 283,
+   "height": 178,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Dry Rot/57.jpg",
+   "label": 3,
+   "md5": "a89a40d62f56a3e81cd8e5043cc5b124",
+   "width": 600,
+   "height": 472,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Dry Rot/58.jpg",
+   "label": 3,
+   "md5": "4675a9d3d9e92971cf6d21ffbac67b4b",
+   "width": 426,
+   "height": 319,
+   "status": "kept",
+   "related_group": 9,
+   "fold": 1
+  },
+  {
+   "path": "Dry Rot/59.jpg",
+   "label": 3,
+   "md5": "b71c1fad49869a9278315b702e7c2ba5",
+   "width": 452,
+   "height": 360,
+   "status": "kept",
+   "related_group": 9,
+   "fold": 1
+  },
+  {
+   "path": "Dry Rot/60.jpg",
+   "label": 3,
+   "md5": "b437c4b1461416061ec466a484ab108f",
+   "width": 369,
+   "height": 365,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Healthy Potatoes/1.jpg",
+   "label": 4,
+   "md5": "6a775f44b2e640ee6fac7e1304fe828c",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Healthy Potatoes/2.jpg",
+   "label": 4,
+   "md5": "8a30e6c75920180127c3f96e6a1c89bf",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Healthy Potatoes/3.jpg",
+   "label": 4,
+   "md5": "badd91fbe0605dc745f8cfd3599e104f",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Healthy Potatoes/4.jpg",
+   "label": 4,
+   "md5": "727b221810c6fa34ee7cbd102f01f5b5",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Healthy Potatoes/5.jpg",
+   "label": 4,
+   "md5": "2515775939cf20a30b30800390a58c51",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Healthy Potatoes/6.jpg",
+   "label": 4,
+   "md5": "82b40e9c9d13c5c9e617a35431171458",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Healthy Potatoes/7.jpg",
+   "label": 4,
+   "md5": "59705b834a1748f6d785bfe30fe3d1e6",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Healthy Potatoes/8.jpg",
+   "label": 4,
+   "md5": "f5780e69aaa6a7e1a1c12d84ab8217d4",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Healthy Potatoes/9.jpg",
+   "label": 4,
+   "md5": "9058a32d25d356bcc6dc8a535e7ce83f",
+   "width": 224,
+   "height": 224,
+   "status": "excluded_duplicate",
+   "related_group": null,
+   "fold": -1
+  },
+  {
+   "path": "Healthy Potatoes/10.jpg",
+   "label": 4,
+   "md5": "3fb0f4922d082277a63dc9a417d7d41e",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Healthy Potatoes/11.jpg",
+   "label": 4,
+   "md5": "f6b8fd62d0d3fcd05d5d271b699c1a5a",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Healthy Potatoes/12.jpg",
+   "label": 4,
+   "md5": "45a58c73914343443fd3e94327ff3cd9",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Healthy Potatoes/13.jpg",
+   "label": 4,
+   "md5": "c42471cad0a7eb0431f10b3e3f82f81d",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Healthy Potatoes/14.jpg",
+   "label": 4,
+   "md5": "f82893e595917001bb2cb422ae495f4b",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Healthy Potatoes/15.jpg",
+   "label": 4,
+   "md5": "6ad3f7874e7f80ac69592dcdad8eb062",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Healthy Potatoes/16.jpg",
+   "label": 4,
+   "md5": "94a57b4b08523700e79491c18db4315c",
+   "width": 224,
+   "height": 224,
+   "status": "excluded_duplicate",
+   "related_group": null,
+   "fold": -1
+  },
+  {
+   "path": "Healthy Potatoes/17.jpg",
+   "label": 4,
+   "md5": "1f436d2c467475d049b77ea0d5a3e738",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Healthy Potatoes/18.jpg",
+   "label": 4,
+   "md5": "b4b54ef2512cbf7fe751800893262be1",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Healthy Potatoes/19.jpg",
+   "label": 4,
+   "md5": "883eee5ef42de242fe124f76873aded5",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Healthy Potatoes/20.jpg",
+   "label": 4,
+   "md5": "c1881fdd89ab6f3fc3f9836848d6be9d",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Healthy Potatoes/21.jpg",
+   "label": 4,
+   "md5": "3060f6b5ee3809d9afe69d2b82295666",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Healthy Potatoes/22.jpg",
+   "label": 4,
+   "md5": "11a70bf566c4b0940b47c36dff58b13d",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Healthy Potatoes/23.jpg",
+   "label": 4,
+   "md5": "33e929095ffed6ac5ce4636f0c7ed5e3",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Healthy Potatoes/24.jpg",
+   "label": 4,
+   "md5": "94a874c15da4b045a55f9c2b124dc0ef",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Healthy Potatoes/25.jpg",
+   "label": 4,
+   "md5": "309a32fa207a0aecf5ef7534714278a2",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Healthy Potatoes/26.jpg",
+   "label": 4,
+   "md5": "2d25954ca50931b472e6ff48a2977c30",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Healthy Potatoes/27.jpg",
+   "label": 4,
+   "md5": "1dd79c049258105389d7fd21abcb0f27",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Healthy Potatoes/28.jpg",
+   "label": 4,
+   "md5": "2765b705e29f9b5e3d4f07ca873086ce",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Healthy Potatoes/29.jpg",
+   "label": 4,
+   "md5": "b7225e708bbb62232cf2d9504340ace7",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Healthy Potatoes/30.jpg",
+   "label": 4,
+   "md5": "82158d0ee023c1ad8b698b6206c9ba1d",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Healthy Potatoes/31.jpg",
+   "label": 4,
+   "md5": "75f94f35f812d1977ed4f9e963cb3e23",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Healthy Potatoes/32.jpg",
+   "label": 4,
+   "md5": "3aba46b081f114f47600244db85a041c",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Healthy Potatoes/33.jpg",
+   "label": 4,
+   "md5": "3b0ee8d6df6e623c37420394b81b87a8",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Healthy Potatoes/34.jpg",
+   "label": 4,
+   "md5": "2e4303bdf31b522c5766c5a6ad506f99",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Healthy Potatoes/35.jpg",
+   "label": 4,
+   "md5": "e15c94e20f299dbf4fa1d3b836dadd00",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Healthy Potatoes/36.jpg",
+   "label": 4,
+   "md5": "73e960632d15b219a4d6699e8f7f518c",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Healthy Potatoes/37.jpg",
+   "label": 4,
+   "md5": "10b5a15dc5974ac1ca41b412319b78a7",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Healthy Potatoes/38.jpg",
+   "label": 4,
+   "md5": "d4a78f3a1ded7496d6845a10f06e271f",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Healthy Potatoes/39.jpg",
+   "label": 4,
+   "md5": "ffe00621185f9371f62e47f9bd8d5d0b",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Healthy Potatoes/40.jpg",
+   "label": 4,
+   "md5": "282da0036d4bab7eb7c7efd2801bb7d2",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Healthy Potatoes/41.jpg",
+   "label": 4,
+   "md5": "be9282f8f9e99bd1d2b248c23bec4280",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Healthy Potatoes/42.jpg",
+   "label": 4,
+   "md5": "55c04674e95cb645cd0ca8ed33435588",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Healthy Potatoes/43.jpg",
+   "label": 4,
+   "md5": "42c731bfa8ba68063f4ab9435dccc964",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Healthy Potatoes/44.jpg",
+   "label": 4,
+   "md5": "e73d96440e2f039ceede8cb7f502991a",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Healthy Potatoes/45.jpg",
+   "label": 4,
+   "md5": "c41d7d8f776bd69bbd8edab189cd69da",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Healthy Potatoes/46.jpg",
+   "label": 4,
+   "md5": "fbf7ab9bf7d840c81e2dc22a42021c05",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Healthy Potatoes/47.jpg",
+   "label": 4,
+   "md5": "591bc1b0b3d21c4c562b78f2cfd0b6bf",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Healthy Potatoes/48.jpg",
+   "label": 4,
+   "md5": "dd88cd7808b5a66efb2913ac7e0ba96b",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Healthy Potatoes/49.jpg",
+   "label": 4,
+   "md5": "7b3db19ee853ad6f184cd48eef150ca7",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Healthy Potatoes/50.jpg",
+   "label": 4,
+   "md5": "a83cf55e6579e4b2d4709903040ab6be",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Healthy Potatoes/51.jpg",
+   "label": 4,
+   "md5": "c0d48b0d16ef0906b00a1030ef1e3818",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Healthy Potatoes/52.jpg",
+   "label": 4,
+   "md5": "f6b151c65f32bfe362e722f2847c1bb1",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Healthy Potatoes/53.jpg",
+   "label": 4,
+   "md5": "61fe4b14e7f20349a7dc4fe5ea55425b",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Healthy Potatoes/54.jpg",
+   "label": 4,
+   "md5": "763a8b9be3596cdc93b99ec8c1d29e45",
+   "width": 224,
+   "height": 224,
+   "status": "excluded_duplicate",
+   "related_group": null,
+   "fold": -1
+  },
+  {
+   "path": "Healthy Potatoes/55.jpg",
+   "label": 4,
+   "md5": "55a600cb6c578c5e2f2ce86a22d861ba",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Healthy Potatoes/56.jpg",
+   "label": 4,
+   "md5": "26703f5b1bec00673c071ee6683e9900",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Healthy Potatoes/57.jpg",
+   "label": 4,
+   "md5": "b58295f49525a62c683af4208869237c",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Healthy Potatoes/58.jpg",
+   "label": 4,
+   "md5": "62ab8b44f35064e050a839b42332bc33",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Healthy Potatoes/59.jpg",
+   "label": 4,
+   "md5": "641e0b8512153369f22cc22696164a92",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Healthy Potatoes/60.jpg",
+   "label": 4,
+   "md5": "1678c4a91705d8758d64d2d0fb6a2c4d",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Healthy Potatoes/61.jpg",
+   "label": 4,
+   "md5": "725f4d08dcdd642c0beb6a66dbda9c11",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Healthy Potatoes/62.jpg",
+   "label": 4,
+   "md5": "176375f252c2db29c2bdf65c3d073b94",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Healthy Potatoes/63.jpg",
+   "label": 4,
+   "md5": "451c08d73e5bbfbcea5ff78471de1ed0",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Healthy Potatoes/64.jpg",
+   "label": 4,
+   "md5": "27f4ac01a0405046597fe3eadf8d34be",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Healthy Potatoes/65.jpg",
+   "label": 4,
+   "md5": "c2c1b31d16e89c016abd1cf4fce7a5da",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Healthy Potatoes/66.jpg",
+   "label": 4,
+   "md5": "2cff8dbb38338fb2e4b72be94dc9881b",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Healthy Potatoes/67.jpg",
+   "label": 4,
+   "md5": "fbe1cd29821980e050486c77e6de4914",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Healthy Potatoes/68.jpg",
+   "label": 4,
+   "md5": "8ec8ad6e8627d7e2e21c6feabab393a0",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Healthy Potatoes/69.jpg",
+   "label": 4,
+   "md5": "fc08ca5d0811ac7b124c07ffa2a3859b",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Healthy Potatoes/70.jpg",
+   "label": 4,
+   "md5": "de944baa946b1269e820f6c0b6a1ea88",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Healthy Potatoes/71.jpg",
+   "label": 4,
+   "md5": "8099be77a109d6a3e2df28286b19006d",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Healthy Potatoes/72.jpg",
+   "label": 4,
+   "md5": "74c1905071fa05e962c1446e050141cb",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Healthy Potatoes/73.jpg",
+   "label": 4,
+   "md5": "fdf1ddcc5466227fbab2fd553847935a",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Healthy Potatoes/74.jpg",
+   "label": 4,
+   "md5": "e94a3d8ba1dc8a3497db549168e6e672",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Healthy Potatoes/75.jpg",
+   "label": 4,
+   "md5": "eea597ae46b556e7be0cb5205eb0000b",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Healthy Potatoes/76.jpg",
+   "label": 4,
+   "md5": "b817eaa99ebfe734862fe977429d693b",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Healthy Potatoes/77.jpg",
+   "label": 4,
+   "md5": "cb47299cfa4b9a9efd209a29ca3c8365",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Healthy Potatoes/78.jpg",
+   "label": 4,
+   "md5": "fd0317227d3605860fbe651dd997f31c",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Healthy Potatoes/79.jpg",
+   "label": 4,
+   "md5": "50c8fac09725540a5a5c9d929bf272e7",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Healthy Potatoes/80.jpg",
+   "label": 4,
+   "md5": "d5ec3447668858f58219547318f67b2b",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Miscellaneous/1.jpg",
+   "label": 5,
+   "md5": "75f2f990508b12f9b3b0d45b1fa2544d",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Miscellaneous/2.jpg",
+   "label": 5,
+   "md5": "33ad1e19b76fd0b43c12823b5c529f01",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Miscellaneous/3.jpg",
+   "label": 5,
+   "md5": "4126775f8762aa4d513d15e205c3b1e1",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Miscellaneous/4.jpg",
+   "label": 5,
+   "md5": "c6fc8400f3353642c3b3e5628264d555",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Miscellaneous/5.jpg",
+   "label": 5,
+   "md5": "cf25503155772f1e3ce081edc9b69423",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Miscellaneous/6.jpg",
+   "label": 5,
+   "md5": "83baa7af51d2d4d5ee38cfc2636eb409",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": 4,
+   "fold": 0
+  },
+  {
+   "path": "Miscellaneous/7.jpg",
+   "label": 5,
+   "md5": "9c0d7efb1d27495d2cc339e60741c299",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": 4,
+   "fold": 0
+  },
+  {
+   "path": "Miscellaneous/8.jpg",
+   "label": 5,
+   "md5": "5bfc1f06e6540501190477db12cbf915",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Miscellaneous/9.jpg",
+   "label": 5,
+   "md5": "b7cdb55b96950c6047e36ce59aa12123",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Miscellaneous/10.jpg",
+   "label": 5,
+   "md5": "3e996143e655467495b184f5e8e1f55f",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Miscellaneous/11.jpg",
+   "label": 5,
+   "md5": "1c272e2763837fe6d524bb1c5bda9004",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Miscellaneous/12.jpg",
+   "label": 5,
+   "md5": "58d1085df2900b7597154d7ff45de0ff",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Miscellaneous/13.jpg",
+   "label": 5,
+   "md5": "709b22e58e54950adcaf0c8360a66e1f",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Miscellaneous/14.jpg",
+   "label": 5,
+   "md5": "990590e0047ac68a36910ba48d0d6ea4",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Miscellaneous/15.jpg",
+   "label": 5,
+   "md5": "78f1be54e4331f90d1fa3239b809d091",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Miscellaneous/16.jpg",
+   "label": 5,
+   "md5": "c5f0dd81038427fb1a51e9b0717291a0",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Miscellaneous/17.jpg",
+   "label": 5,
+   "md5": "ec555c607fc0b9c3ab6da17054118472",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Miscellaneous/18.jpg",
+   "label": 5,
+   "md5": "7da8f3eb258531e4a67af7acbbd1701d",
+   "width": 224,
+   "height": 224,
+   "status": "excluded_label_conflict",
+   "related_group": null,
+   "fold": -1
+  },
+  {
+   "path": "Miscellaneous/19.jpg",
+   "label": 5,
+   "md5": "101db2af7a93f46ea403ea6a36b1e4ab",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Miscellaneous/20.jpg",
+   "label": 5,
+   "md5": "3dc664ecfacbb802fb0346b9a7742f5f",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Miscellaneous/21.jpg",
+   "label": 5,
+   "md5": "9e2dd6b805e124c2faff94609d4afd82",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": 6,
+   "fold": 1
+  },
+  {
+   "path": "Miscellaneous/22.jpg",
+   "label": 5,
+   "md5": "7b4acee37d308ea5f8236c02e5488ce1",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": 5,
+   "fold": 4
+  },
+  {
+   "path": "Miscellaneous/23.jpg",
+   "label": 5,
+   "md5": "27c001bf3a4ca731f1aa37d9615df816",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Miscellaneous/24.jpg",
+   "label": 5,
+   "md5": "83eea4c0185b101d92513448fecf28a2",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": 5,
+   "fold": 4
+  },
+  {
+   "path": "Miscellaneous/25.jpg",
+   "label": 5,
+   "md5": "b3d6b4a8781c04aaac90f027155f07cb",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Miscellaneous/26.jpg",
+   "label": 5,
+   "md5": "12f508359f1fb95b0823442b17b6a7cc",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Miscellaneous/27.jpg",
+   "label": 5,
+   "md5": "1cf9948bb8105ded668e29d3646b1b9c",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": 6,
+   "fold": 1
+  },
+  {
+   "path": "Miscellaneous/28.jpg",
+   "label": 5,
+   "md5": "618f815fea297c9228f6be172899e854",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Miscellaneous/29.jpg",
+   "label": 5,
+   "md5": "0240015617e6bbcb6808438baccc3d19",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Miscellaneous/30.jpg",
+   "label": 5,
+   "md5": "e59111da1cec614271671559c27e2be0",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Miscellaneous/31.jpg",
+   "label": 5,
+   "md5": "2ea8ddc7383495ce51b6eda3ede50c5d",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Miscellaneous/32.jpg",
+   "label": 5,
+   "md5": "151f297d3c5b6ea1ecc2d4b492827592",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Miscellaneous/33.jpg",
+   "label": 5,
+   "md5": "5bb3a6cbb6eba68066bd96d3e22a65b8",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Miscellaneous/34.jpg",
+   "label": 5,
+   "md5": "90615ddf4a73fc8d47def3ea2ebd1cd3",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Miscellaneous/35.jpg",
+   "label": 5,
+   "md5": "6bea2c9c0b3df10811f75bcee5595d77",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Miscellaneous/36.jpg",
+   "label": 5,
+   "md5": "a2e43b3d59fcb41b7ef153f16b0b64b3",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Miscellaneous/37.jpg",
+   "label": 5,
+   "md5": "9c6d7e860c8547400ebedfbbfa822acd",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Miscellaneous/38.jpg",
+   "label": 5,
+   "md5": "5c891973286193070bbd8cf603c48ac5",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Miscellaneous/39.jpg",
+   "label": 5,
+   "md5": "a2553d4d4577dacc3ea86558bd6c8dd9",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Miscellaneous/40.jpg",
+   "label": 5,
+   "md5": "140c4dfada06c6e0b379c7ecc6bc3ed9",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Miscellaneous/41.jpg",
+   "label": 5,
+   "md5": "a230200e722a197a566f6c2c134ad2c5",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Miscellaneous/42.jpg",
+   "label": 5,
+   "md5": "b76048b7de8e218509815336992fdd28",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Miscellaneous/43.jpg",
+   "label": 5,
+   "md5": "b5c0890d0b251b2dc01ec89e514e1483",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Miscellaneous/44.jpg",
+   "label": 5,
+   "md5": "7ba7cd91dd1c08636149cc015da5d92b",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Miscellaneous/45.jpg",
+   "label": 5,
+   "md5": "044556babb01688a56d2089e3a6b5e71",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Miscellaneous/46.jpg",
+   "label": 5,
+   "md5": "b2921e15ac191b88e028c08b44caa583",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Miscellaneous/47.jpg",
+   "label": 5,
+   "md5": "e457358ca7f5c24e15ec3750443b54ab",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Miscellaneous/48.jpg",
+   "label": 5,
+   "md5": "f9e906ca7a40abe79eee6650f1850cde",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Miscellaneous/49.jpg",
+   "label": 5,
+   "md5": "bab85e9f521052e9b04e31653cf4b659",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Miscellaneous/50.jpg",
+   "label": 5,
+   "md5": "47339c7245c6d1e8d5459f31e0b19c5b",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Miscellaneous/51.jpg",
+   "label": 5,
+   "md5": "1a3e891bbdd6cfdf8081c50803a6da36",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Miscellaneous/52.jpg",
+   "label": 5,
+   "md5": "a43275f23bc19f21542fe4059990ae22",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Miscellaneous/53.jpg",
+   "label": 5,
+   "md5": "4bc205007e938de518d7b502fcf10f7d",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Miscellaneous/54.jpg",
+   "label": 5,
+   "md5": "bccce152784648be05622b8035a45b44",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Miscellaneous/55.jpg",
+   "label": 5,
+   "md5": "5ed1d3aa8667285d463f9cc154612a9c",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Miscellaneous/56.jpg",
+   "label": 5,
+   "md5": "6d07b439da6caa856b577e83549cf1c1",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Miscellaneous/57.jpg",
+   "label": 5,
+   "md5": "4457d2f2f5da311221f47714075c8db8",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Miscellaneous/58.jpg",
+   "label": 5,
+   "md5": "bccce152784648be05622b8035a45b44",
+   "width": 224,
+   "height": 224,
+   "status": "excluded_duplicate",
+   "related_group": null,
+   "fold": -1
+  },
+  {
+   "path": "Miscellaneous/59.jpg",
+   "label": 5,
+   "md5": "80a56ae8c395110414e8a82d11204bcb",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Miscellaneous/60.jpg",
+   "label": 5,
+   "md5": "9d63afe8979e4807bfe83accf1773afe",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Miscellaneous/61.jpg",
+   "label": 5,
+   "md5": "9c78b0df8cb16d091ab05f5d06fc6b80",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Miscellaneous/62.jpg",
+   "label": 5,
+   "md5": "0d810d723912b1b730a8353f2083485d",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Miscellaneous/63.jpg",
+   "label": 5,
+   "md5": "dc90bc3f8a9d51ca163e47cb340c657b",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Miscellaneous/64.jpg",
+   "label": 5,
+   "md5": "d75f1a6d258b86b697227492b8c9eb47",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Miscellaneous/65.jpg",
+   "label": 5,
+   "md5": "ee176abeba5d5552f54edaf867f3df8e",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Miscellaneous/66.jpg",
+   "label": 5,
+   "md5": "7fd4033b4c46963f230bd0e4283163d2",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Miscellaneous/67.jpg",
+   "label": 5,
+   "md5": "ab77551fc9337e3e7bade621914bd32c",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Miscellaneous/68.jpg",
+   "label": 5,
+   "md5": "a3a9d7c4bbdb7d22d5a37923961c93a2",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Miscellaneous/69.jpg",
+   "label": 5,
+   "md5": "ce5801cdb1665d9c6975c91c165c1848",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Miscellaneous/70.jpg",
+   "label": 5,
+   "md5": "9c7bc4c2da8f240d6740bba42c413e72",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Miscellaneous/71.jpg",
+   "label": 5,
+   "md5": "7c96bbf4d74ca97037b57834c1d7db23",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": 7,
+   "fold": 2
+  },
+  {
+   "path": "Miscellaneous/72.jpg",
+   "label": 5,
+   "md5": "9f94da88582b77178427f7491a29ca78",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": 7,
+   "fold": 2
+  },
+  {
+   "path": "Miscellaneous/73.jpg",
+   "label": 5,
+   "md5": "f993f1394c0680ec2aa812c54c23bce1",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Miscellaneous/74.jpg",
+   "label": 5,
+   "md5": "637b46c6b6b1995a18bc679ef9152455",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Pink Rot/1.jpg",
+   "label": 6,
+   "md5": "65c470fb2bac77d1e2398caec59f514d",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Pink Rot/2.jpg",
+   "label": 6,
+   "md5": "4f14903cc91dc4d351418a1a5c12ccb7",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Pink Rot/3.jpg",
+   "label": 6,
+   "md5": "c7cc75173f92ec72227476962bddeb98",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Pink Rot/4.jpg",
+   "label": 6,
+   "md5": "0312cc3ee9a86fe70d76c35f73fcc3be",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Pink Rot/5.jpg",
+   "label": 6,
+   "md5": "970b8575c03e8cd69f256ba6cd53c37b",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Pink Rot/6.jpg",
+   "label": 6,
+   "md5": "3ea8bbf3c3834154346841be5a4ad234",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Pink Rot/7.jpg",
+   "label": 6,
+   "md5": "8bf946026b1e9fa5932568fad998b55f",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Pink Rot/8.jpg",
+   "label": 6,
+   "md5": "e9590a37de38b94ad1c6355b327acb12",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": 3,
+   "fold": 2
+  },
+  {
+   "path": "Pink Rot/9.jpg",
+   "label": 6,
+   "md5": "5b1d9d8a3911fb3664001bbcb61328a1",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": 2,
+   "fold": 1
+  },
+  {
+   "path": "Pink Rot/10.jpg",
+   "label": 6,
+   "md5": "b3efacbb3aca318b203e4eac856add42",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Pink Rot/11.jpg",
+   "label": 6,
+   "md5": "4040f9cc6832c3a389eb9f1118522bfa",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Pink Rot/12.jpg",
+   "label": 6,
+   "md5": "dbe9ba8f22d1b544fd40779c075fddfd",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Pink Rot/13.jpg",
+   "label": 6,
+   "md5": "618d82c234839d5459ca38e0e6a6c21f",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": 2,
+   "fold": 1
+  },
+  {
+   "path": "Pink Rot/14.jpg",
+   "label": 6,
+   "md5": "f0f27ac362bbe098af9071ab9e3fb234",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Pink Rot/15.jpg",
+   "label": 6,
+   "md5": "05ac611d37e1e05f882a4774f75267a8",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Pink Rot/16.jpg",
+   "label": 6,
+   "md5": "df5c653c7516745d6b6efcd90350a2f3",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Pink Rot/17.jpg",
+   "label": 6,
+   "md5": "0702104e3590350438392febcee73cd6",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Pink Rot/18.jpg",
+   "label": 6,
+   "md5": "c593518bd086f7186e8a9ad03165a1a8",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Pink Rot/19.jpg",
+   "label": 6,
+   "md5": "0f36b26ff146145aaa9044328ffbb7a2",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Pink Rot/20.jpg",
+   "label": 6,
+   "md5": "95d4972c9face983c3ce86adc00ed246",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Pink Rot/21.jpg",
+   "label": 6,
+   "md5": "c54f069a8a66b668fd349cc87869ef43",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Pink Rot/22.jpg",
+   "label": 6,
+   "md5": "63d48d18f2eb34d243b3410fbc10a897",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Pink Rot/23.jpg",
+   "label": 6,
+   "md5": "aa8b5c9d248dc585eb5433042f50cd4a",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Pink Rot/24.jpg",
+   "label": 6,
+   "md5": "55a93d57c354eac465f7f217a3c6ab9a",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": 3,
+   "fold": 2
+  },
+  {
+   "path": "Pink Rot/25.jpg",
+   "label": 6,
+   "md5": "33fe9d9608e9ef6a9912d693042bed2a",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Pink Rot/26.jpg",
+   "label": 6,
+   "md5": "a57f5fe2bc3607990ab7ff218e0b55bc",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Pink Rot/27.jpg",
+   "label": 6,
+   "md5": "35c568922a19d5e63a4e384f87b50465",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Pink Rot/28.jpg",
+   "label": 6,
+   "md5": "c391fa4e9a349ea4c272e0df1c0ba091",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Pink Rot/29.jpg",
+   "label": 6,
+   "md5": "ada6dd8b5424e0f220066eabaf177768",
+   "width": 224,
+   "height": 224,
+   "status": "excluded_duplicate",
+   "related_group": null,
+   "fold": -1
+  },
+  {
+   "path": "Pink Rot/30.jpg",
+   "label": 6,
+   "md5": "2e20cd47f0f32e43c234ed11951d0112",
+   "width": 224,
+   "height": 224,
+   "status": "excluded_duplicate",
+   "related_group": null,
+   "fold": -1
+  },
+  {
+   "path": "Pink Rot/31.jpg",
+   "label": 6,
+   "md5": "4d1d0b39b429c8e9e283aa09ecfde71b",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Pink Rot/32.jpg",
+   "label": 6,
+   "md5": "82e614353719d9f29b02ef2cb2e7deb2",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Pink Rot/33.jpg",
+   "label": 6,
+   "md5": "0ba1fd22aa7d54e9287e620064a3bf91",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Pink Rot/34.jpg",
+   "label": 6,
+   "md5": "a89a8ca1110f1e1085057bc26180569a",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Pink Rot/35.jpg",
+   "label": 6,
+   "md5": "09d96929cbb9f59c92fba66435dbb17e",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Pink Rot/36.jpg",
+   "label": 6,
+   "md5": "5efe9e7fb94297c417e52a9ea1ff802e",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Pink Rot/37.jpg",
+   "label": 6,
+   "md5": "bfe95b1151624327e0344b7bf3d57d89",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Pink Rot/38.jpg",
+   "label": 6,
+   "md5": "c86830152f9e477fc6b4aae75698ef82",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Pink Rot/39.jpg",
+   "label": 6,
+   "md5": "c4fec55ac7db53436cc0267e4d700da5",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Pink Rot/40.jpg",
+   "label": 6,
+   "md5": "53a697bba97cdff97d4005a93f575119",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Pink Rot/41.jpg",
+   "label": 6,
+   "md5": "d9122adb8aae7bb71c62dcc7b696f524",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Pink Rot/42.jpg",
+   "label": 6,
+   "md5": "141e55b99482725b38f63ed59df63b3d",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Pink Rot/43.jpg",
+   "label": 6,
+   "md5": "f5cc3f813d47df2275fac155cbd915b9",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  },
+  {
+   "path": "Pink Rot/44.jpg",
+   "label": 6,
+   "md5": "5060299db4d1720463505295e36fbf15",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Pink Rot/45.jpg",
+   "label": 6,
+   "md5": "4e042ea2a5155032be6b23e7a4b5e509",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Pink Rot/46.jpg",
+   "label": 6,
+   "md5": "18858353254a2270c1124a9083b32977",
+   "width": 224,
+   "height": 224,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Pink Rot/47.jpg",
+   "label": 6,
+   "md5": "78aa06055f7041dd84694da7ce92b6fb",
+   "width": 896,
+   "height": 502,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Pink Rot/48.jpg",
+   "label": 6,
+   "md5": "c77682814f2701a864c800aee44a8bc7",
+   "width": 416,
+   "height": 121,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Pink Rot/49.jpg",
+   "label": 6,
+   "md5": "ad2d7be78ce0fe3e13a2af2ef31a5126",
+   "width": 250,
+   "height": 251,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Pink Rot/50.jpg",
+   "label": 6,
+   "md5": "f3980c91c8cb5aa9c61771fcd21df880",
+   "width": 704,
+   "height": 526,
+   "status": "kept",
+   "related_group": null,
+   "fold": 3
+  },
+  {
+   "path": "Pink Rot/51.jpg",
+   "label": 6,
+   "md5": "7f10f4df094297d2bd1349f64fa9ecba",
+   "width": 350,
+   "height": 166,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Pink Rot/52.jpg",
+   "label": 6,
+   "md5": "38cda6ad0309df415bc9a27e8a4521dd",
+   "width": 1181,
+   "height": 894,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Pink Rot/53.jpg",
+   "label": 6,
+   "md5": "7e8cb5012872086464f4eb60d320e5b6",
+   "width": 700,
+   "height": 842,
+   "status": "kept",
+   "related_group": null,
+   "fold": 4
+  },
+  {
+   "path": "Pink Rot/54.jpg",
+   "label": 6,
+   "md5": "dba629fbedd40925a5b9a6fbeeb9a720",
+   "width": 349,
+   "height": 220,
+   "status": "kept",
+   "related_group": null,
+   "fold": 1
+  },
+  {
+   "path": "Pink Rot/55.jpg",
+   "label": 6,
+   "md5": "0d80c0ff1fddd7e1a9c37f50742bd439",
+   "width": 396,
+   "height": 619,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Pink Rot/56.jpg",
+   "label": 6,
+   "md5": "90af4f403a8b8dc3ed14951ffafa9c85",
+   "width": 156,
+   "height": 163,
+   "status": "kept",
+   "related_group": null,
+   "fold": 0
+  },
+  {
+   "path": "Pink Rot/57.jpg",
+   "label": 6,
+   "md5": "e41098e780ab2ba6ece9be23495d9730",
+   "width": 208,
+   "height": 242,
+   "status": "kept",
+   "related_group": null,
+   "fold": 2
+  }
+ ]
+}

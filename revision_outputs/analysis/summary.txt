@@ -1,0 +1,98 @@
+Runs loaded: 1268 | by stage: {'grid': 980, 'noaug': 160, 'scratch': 120, 'full100': 8}
+Run status: {'ok': 1268}
+
+Configurations: 49 (49 with all 5 rotations)
+
+== Top 10 by mean macro-F1 (mean ± SD over rotations; pooled accuracy with 95% bootstrap CI) ==
+  DenseNet-121     ReLU       F1  80.4 ±  2.8 | acc  81.2 ±  2.8 | pooled acc  81.2 [77.5, 84.9] | AUC 0.957 | LR 1e-04x2; 3e-04x2; 1e-03x1
+  EfficientNet-B3  GELU       F1  79.5 ±  3.3 | acc  80.3 ±  3.1 | pooled acc  80.3 [76.6, 84.0] | AUC 0.950 | LR 3e-05x1; 3e-04x1; 1e-03x3
+  ResNet-50        Leaky ReLU F1  79.5 ±  1.3 | acc  80.0 ±  1.2 | pooled acc  80.0 [76.3, 83.8] | AUC 0.962 | LR 3e-05x2; 1e-04x3
+  VGG-19           Leaky ReLU F1  78.9 ±  4.4 | acc  79.6 ±  4.4 | pooled acc  79.6 [75.6, 83.1] | AUC 0.957 | LR 3e-05x2; 1e-04x3
+  VGG-16           Swish      F1  78.8 ±  5.3 | acc  79.6 ±  5.1 | pooled acc  79.6 [75.6, 83.3] | AUC 0.948 | LR 1e-05x1; 1e-04x4
+  MobileNetV2      ReLU6      F1  78.8 ±  1.6 | acc  79.4 ±  1.5 | pooled acc  79.4 [75.6, 83.1] | AUC 0.962 | LR 1e-04x1; 3e-04x3; 1e-03x1
+  EfficientNet-B0  Mish       F1  78.7 ±  4.2 | acc  79.6 ±  3.9 | pooled acc  79.6 [75.9, 83.3] | AUC 0.949 | LR 1e-04x1; 3e-04x3; 1e-03x1
+  VGG-19           Swish      F1  78.5 ±  3.5 | acc  79.4 ±  2.8 | pooled acc  79.4 [75.4, 82.8] | AUC 0.952 | LR 3e-05x2; 1e-04x3
+  DenseNet-121     Leaky ReLU F1  78.1 ±  2.2 | acc  78.7 ±  2.4 | pooled acc  78.7 [74.7, 82.4] | AUC 0.957 | LR 3e-05x1; 1e-04x1; 3e-04x3
+  VGG-19           GELU       F1  77.7 ±  1.4 | acc  78.4 ±  1.5 | pooled acc  78.4 [74.5, 82.1] | AUC 0.952 | LR 3e-05x3; 1e-04x2
+
+== Bottom 5 ==
+  ResNet-50        GELU       F1  69.4 ±  5.5 | failed folds 0 | LR 3e-05x1; 1e-04x1; 3e-04x3
+  EfficientNet-B3  PReLU      F1  68.0 ±  5.7 | failed folds 0 | LR 1e-04x1; 3e-04x2; 1e-03x2
+  MobileNetV2      Mish       F1  67.3 ±  5.2 | failed folds 0 | LR 3e-05x1; 1e-04x1; 3e-04x1; 1e-03x2
+  ResNet-50        Swish      F1  65.1 ±  4.2 | failed folds 0 | LR 3e-05x1; 1e-04x1; 3e-04x2; 1e-03x1
+  MobileNetV2      Swish      F1  64.7 ±  4.1 | failed folds 0 | LR 3e-05x1; 1e-04x1; 3e-04x1; 1e-03x2
+
+== Divergence: 0/980 grid runs ==
+
+== Selected LR: {1e-05: 3, 3e-05: 37, 0.0001: 67, 0.0003: 86, 0.001: 52} (lowest value of the architecture's grid chosen in 9% of cases, highest in 24%) ==
+
+== Effect of the activation function (blocks = architecture x rotation) ==
+All architectures: Friedman chi2=15.89, df=5, p=0.007178, Kendall W=0.079, blocks=40
+   mean ranks (1 = best): Leaky ReLU=2.77, ReLU=3.02, GELU=3.35, PReLU=3.90, Mish=3.92, Swish=4.03
+   pairwise Wilcoxon-Holm: 2/15 pairs significant at 0.05: ReLU>PReLU; Leaky ReLU>PReLU
+  within ResNet-18: Friedman chi2=11.74, df=5, p=0.03849, Kendall W=0.470, blocks=5
+   mean ranks (1 = best): PReLU=2.40, Leaky ReLU=2.60, GELU=2.60, ReLU=3.20, Swish=4.80, Mish=5.40
+   pairwise Wilcoxon-Holm: 0/15 pairs significant at 0.05
+  within ResNet-50: Friedman chi2=21.00, df=5, p=0.0008101, Kendall W=0.840, blocks=5
+   mean ranks (1 = best): Leaky ReLU=1.40, ReLU=2.20, PReLU=2.60, Mish=4.00, GELU=5.00, Swish=5.80
+   pairwise Wilcoxon-Holm: 0/15 pairs significant at 0.05
+  within DenseNet-121: Friedman chi2=23.06, df=5, p=0.0003292, Kendall W=0.922, blocks=5
+   mean ranks (1 = best): ReLU=1.00, Leaky ReLU=2.00, GELU=3.40, PReLU=3.80, Swish=5.00, Mish=5.80
+   pairwise Wilcoxon-Holm: 0/15 pairs significant at 0.05
+  within MobileNetV2: Friedman chi2=20.20, df=5, p=0.001146, Kendall W=0.808, blocks=5
+   mean ranks (1 = best): ReLU=1.80, Leaky ReLU=2.00, PReLU=2.40, GELU=4.00, Mish=5.00, Swish=5.80
+   pairwise Wilcoxon-Holm: 0/15 pairs significant at 0.05
+  within EfficientNet-B0: Friedman chi2=8.20, df=5, p=0.1456, Kendall W=0.328, blocks=5
+   mean ranks (1 = best): Mish=1.80, Swish=3.00, GELU=3.40, PReLU=3.80, Leaky ReLU=4.00, ReLU=5.00
+   pairwise Wilcoxon-Holm: 0/15 pairs significant at 0.05
+  within EfficientNet-B3: Friedman chi2=13.57, df=5, p=0.01857, Kendall W=0.543, blocks=5
+   mean ranks (1 = best): GELU=1.40, Swish=3.00, Mish=3.20, ReLU=3.80, Leaky ReLU=4.00, PReLU=5.60
+   pairwise Wilcoxon-Holm: 0/15 pairs significant at 0.05
+  within VGG-16: Friedman chi2=9.46, df=5, p=0.09216, Kendall W=0.378, blocks=5
+   mean ranks (1 = best): Swish=2.00, Mish=2.80, ReLU=3.20, Leaky ReLU=3.80, GELU=3.80, PReLU=5.40
+   pairwise Wilcoxon-Holm: 0/15 pairs significant at 0.05
+  within VGG-19: Friedman chi2=7.06, df=5, p=0.2164, Kendall W=0.282, blocks=5
+   mean ranks (1 = best): Leaky ReLU=2.40, Swish=2.80, GELU=3.20, Mish=3.40, ReLU=4.00, PReLU=5.20
+   pairwise Wilcoxon-Holm: 0/15 pairs significant at 0.05
+
+== Effect of the architecture (blocks = activation x rotation) ==
+All activations: Friedman chi2=9.72, df=7, p=0.2049, Kendall W=0.046, blocks=30
+   mean ranks (1 = best): VGG-19=3.60, EfficientNet-B3=4.23, ResNet-18=4.30, DenseNet-121=4.37, VGG-16=4.43, ResNet-50=4.70, EfficientNet-B0=5.07, MobileNetV2=5.30
+   pairwise Wilcoxon-Holm: 0/28 pairs significant at 0.05
+
+== Swaps within versus across activation families (paired over architecture x rotation) ==
+   batch-normalised: cross-family -6.81 pp (p vs 0 = 2e-07), within-family -0.62 pp (p = 0.44); cross vs within p = 1.9e-08 over 30 blocks
+   BN-free (VGG): cross-family +0.34 pp (p vs 0 = 0.85), within-family -2.88 pp (p = 0.084); cross vs within p = 0.084 over 10 blocks
+
+== Swapped activation versus the native one (paired over rotations, macro-F1) ==
+   10/41 swaps have a higher mean macro-F1 than native; 0 significant after Holm correction (5 rotations: the smallest attainable two-sided Wilcoxon p is 0.0625).
+   mean delta over all swaps: -3.45 pp (range -14.13 to +2.55)
+
+== Per-class results of the best configuration (pooled) ==
+  Black Scurf        P  84.2  R  84.2  F1  84.2  AUC 0.975  n=57
+  Blackleg           P  66.0  R  61.4  F1  63.6  AUC 0.920  n=57
+  Common Scab        P  80.0  R  91.2  F1  85.2  AUC 0.982  n=57
+  Dry Rot            P  72.9  R  76.8  F1  74.8  AUC 0.946  n=56
+  Healthy Potatoes   P  95.1  R 100.0  F1  97.5  AUC 1.000  n=77
+  Miscellaneous      P  78.5  R  70.8  F1  74.5  AUC 0.915  n=72
+  Pink Rot           P  86.3  R  80.0  F1  83.0  AUC 0.959  n=55
+
+== Ablations (native activation, macro-F1 %, paired over rotations) ==
+  no ImageNet pre-training: mean delta -31.9 pp over 8 architectures
+     DenseNet-121     full  80.4 -> ablated  51.7 (-28.7) [5 folds]
+     EfficientNet-B0  full  76.6 -> ablated  48.4 (-28.2) [5 folds]
+     EfficientNet-B3  full  77.0 -> ablated  45.9 (-31.0) [5 folds]
+     MobileNetV2      full  78.8 -> ablated  43.5 (-35.4) [5 folds]
+     ResNet-18        full  76.3 -> ablated  50.6 (-25.7) [5 folds]
+     ResNet-50        full  77.5 -> ablated  47.1 (-30.3) [5 folds]
+     VGG-16           full  76.3 -> ablated  40.2 (-36.2) [5 folds]
+     VGG-19           full  77.5 -> ablated  38.1 (-39.4) [5 folds]
+  no augmentation: mean delta -1.1 pp over 8 architectures
+     DenseNet-121     full  80.4 -> ablated  78.4 (-2.0) [5 folds]
+     EfficientNet-B0  full  76.6 -> ablated  75.6 (-1.1) [5 folds]
+     EfficientNet-B3  full  77.0 -> ablated  71.3 (-5.6) [5 folds]
+     MobileNetV2      full  78.8 -> ablated  77.0 (-1.8) [5 folds]
+     ResNet-18        full  76.3 -> ablated  74.7 (-1.6) [5 folds]
+     ResNet-50        full  77.5 -> ablated  79.9 (+2.4) [5 folds]
+     VGG-16           full  76.3 -> ablated  77.3 (+1.0) [5 folds]
+     VGG-19           full  77.5 -> ablated  77.8 (+0.3) [5 folds]
