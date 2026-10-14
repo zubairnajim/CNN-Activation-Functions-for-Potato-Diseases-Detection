@@ -65,8 +65,7 @@ ABSTRACT = (
     "significantly. ImageNet pre-training contributed 32 points of macro-F1 and data augmentation about one point. "
     "Healthy tubers were recognised almost perfectly, while blackleg and dry rot were most often confused. The study "
     "provides a leakage-free benchmark and practical guidance for automated tuber inspection.")
-KEYWORDS = ("Potato tuber diseases; Deep learning; Convolutional neural networks; Activation functions; "
-            "Transfer learning; Data leakage; Cross-validation; Seed potato inspection")
+KEYWORDS = "Potato tuber diseases; Deep learning; Activation functions; Transfer learning; Data leakage; Seed potato inspection"
 
 REFERENCES = [
     "Devaux A, Goffart J-P, Petsakos A, Kromann P, Gatto M, Okello J, Suarez V, Hareau G (2020) Global food security, contributions from sustainable potato agri-food systems. In: Campos H, Ortiz O (eds) The Potato Crop. Springer, Cham, pp 3–35. https://doi.org/10.1007/978-3-030-28683-5_1",
@@ -93,7 +92,7 @@ REFERENCES = [
     "Kapoor S, Narayanan A (2023) Leakage and the reproducibility crisis in machine-learning-based science. Patterns 4:100804. https://doi.org/10.1016/j.patter.2023.100804",
     "Barz B, Denzler J (2020) Do we train on test data? Purging CIFAR of near-duplicates. J Imaging 6:41. https://doi.org/10.3390/jimaging6060041",
     "Singh D, Jain N, Jain P, Kayal P, Kumawat S, Batra N (2020) PlantDoc: a dataset for visual plant disease detection. In: Proc 7th ACM IKDD CoDS and 25th COMAD, pp 249–253. https://doi.org/10.1145/3371158.3371196",
-    "Dutta M, Gupta D, Gulzar Y, et al. (2024) Leveraging Inception V3 for precise early and late blight disease classification in potato crops. Traitement du Signal 41(2):705–715. https://doi.org/10.18280/ts.410213",
+    "Dutta M, Gupta D, Gulzar Y et al (2024) Leveraging Inception V3 for precise early and late blight disease classification in potato crops. Traitement du Signal 41(2):705–715. https://doi.org/10.18280/ts.410213",
     "Gulzar Y (2024) Enhancing soybean classification with modified inception model: a transfer learning approach. Emir J Food Agric 36:1–9. https://doi.org/10.3897/ejfa.2024.122928",
     "Seelwal P, Dhiman P, Gulzar Y, Kaur A, Wadhwa S, Onn CW (2024) A systematic review of deep learning applications for rice disease diagnosis: current trends and future directions. Front Comput Sci 6:1452961. https://doi.org/10.3389/fcomp.2024.1452961",
     "Oppenheim D, Shani G (2017) Potato disease classification using convolution neural networks. Adv Anim Biosci 8(2):244–249. https://doi.org/10.1017/S2040470017001376",
@@ -115,7 +114,7 @@ REFERENCES = [
     "Szegedy C, Vanhoucke V, Ioffe S, Shlens J, Wojna Z (2016) Rethinking the Inception architecture for computer vision. In: Proc IEEE Conf Comput Vis Pattern Recognit (CVPR), pp 2818–2826. https://doi.org/10.1109/CVPR.2016.308",
     "Demšar J (2006) Statistical comparisons of classifiers over multiple data sets. J Mach Learn Res 7:1–30",
     "Holm S (1979) A simple sequentially rejective multiple test procedure. Scand J Stat 6:65–70",
-    "Paszke A, Gross S, Massa F, et al. (2019) PyTorch: an imperative style, high-performance deep learning library. In: Adv Neural Inf Process Syst 32 (NeurIPS), pp 8024–8035",
+    "Paszke A, Gross S, Massa F et al (2019) PyTorch: an imperative style, high-performance deep learning library. In: Adv Neural Inf Process Syst 32 (NeurIPS), pp 8024–8035",
     "Selvaraju RR, Cogswell M, Das A, Vedantam R, Parikh D, Batra D (2017) Grad-CAM: visual explanations from deep networks via gradient-based localization. In: Proc IEEE Int Conf Comput Vis (ICCV), pp 618–626. https://doi.org/10.1109/ICCV.2017.74",
     "Ioffe S, Szegedy C (2015) Batch normalization: accelerating deep network training by reducing internal covariate shift. In: Proc 32nd Int Conf Mach Learn (ICML), pp 448–456",
     "Varma S, Simon R (2006) Bias in error estimation when using cross-validation for model selection. BMC Bioinformatics 7:91. https://doi.org/10.1186/1471-2105-7-91",
@@ -179,6 +178,35 @@ def add_runs(par, text: str, size: float = None):
     return par
 
 
+def online_resource(text: str) -> str:
+    """Springer refers to supplementary material as 'Online Resource'."""
+    text = re.sub(r"Supplementary Tables? (S\d)", r"Table \1 (Online Resource 1)", text)
+    return re.sub(r"Supplementary Fig\. (S\d)", r"Fig. \1 (Online Resource 1)", text)
+
+
+def add_line_and_page_numbers(doc: Document):
+    from docx.oxml import OxmlElement
+    from docx.oxml.ns import qn
+    for sec in doc.sections:
+        ln = OxmlElement("w:lnNumType")
+        ln.set(qn("w:countBy"), "1")
+        ln.set(qn("w:restart"), "continuous")
+        ln.set(qn("w:distance"), "283")
+        sec._sectPr.append(ln)
+        para = sec.footer.paragraphs[0]
+        para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        run = para.add_run()
+        for tag, text in (("begin", None), (None, "PAGE"), ("end", None)):
+            if tag:
+                el = OxmlElement("w:fldChar")
+                el.set(qn("w:fldCharType"), tag)
+            else:
+                el = OxmlElement("w:instrText")
+                el.set(qn("xml:space"), "preserve")
+                el.text = text
+            run._r.append(el)
+
+
 def setup(doc: Document):
     st = doc.styles["Normal"]
     st.font.name = "Times New Roman"
@@ -201,9 +229,9 @@ def add_table(doc: Document, df: pd.DataFrame, caption: str, number: int, note: 
     cap = doc.add_paragraph()
     cap.paragraph_format.line_spacing = 1.0
     cap.paragraph_format.space_before = Pt(8)
-    r = cap.add_run(f"Table {number} ")
+    r = cap.add_run(f"Table {number}")
     r.bold = True
-    cap.add_run(caption)
+    cap.add_run(" " + online_resource(caption))
     table = doc.add_table(rows=1, cols=len(df.columns))
     table.style = "Table Grid"
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
@@ -228,7 +256,7 @@ def add_table(doc: Document, df: pd.DataFrame, caption: str, number: int, note: 
     if note:
         p = doc.add_paragraph()
         p.paragraph_format.line_spacing = 1.0
-        add_runs(p, note, size=9)
+        add_runs(p, remap(online_resource(note)), size=9)
     doc.add_paragraph()
 
 
@@ -242,9 +270,9 @@ def add_figure(doc: Document, key: str, number: int, width_cm: float = 16.0):
     doc.paragraphs[-1].alignment = WD_ALIGN_PARAGRAPH.CENTER
     p = doc.add_paragraph()
     p.paragraph_format.line_spacing = 1.0
-    r = p.add_run(f"Fig. {number} ")
+    r = p.add_run(f"Fig. {number}")
     r.bold = True
-    p.add_run(caption)
+    p.add_run(" " + online_resource(caption).rstrip("."))
     doc.add_paragraph()
 
 
@@ -258,13 +286,13 @@ def pm(mean, sd, scale=100.0, nd=1):
 
 def table_prior_work() -> pd.DataFrame:
     rows = [
-        ["Oppenheim and Shani (2017) [28]; Oppenheim et al. (2019) [29]", "Own expert-labelled tuber images (low-cost RGB); 4 diseases + healthy",
+        ["Oppenheim and Shani [28]; Oppenheim et al. [29]", "Own expert-labelled tuber images (low-cost RGB); 4 diseases + healthy",
          "Train/test split", "CNN (VGG-type) trained on tuber images", "High classification accuracy", "Data not public; no comparison of activations"],
-        ["Marino et al. (2019) [30]", "Own tuber images; blemish classes", "Train/test split", "CNN with localisation",
-         "Average F1 ≈ 84% (as cited in [20])", "Grading-line blemishes, not the diseases studied here"],
-        ["Luong (2024) [20]", "This dataset (451 images, 7 classes)", "Augmentation to 5,833 images before a random 80/10/10 split",
+        ["Marino et al. [30]", "Own tuber images; blemish classes", "Train/test split", "CNN with localisation",
+         "Average F1 ≈ 84% as cited by Luong [20]", "Grading-line blemishes, not the diseases studied here"],
+        ["Luong [20]", "This dataset (451 images, 7 classes)", "Augmentation to 5,833 images before a random 80/10/10 split",
          "Custom ConvNeXt-Small, other CNNs", "98.97% test accuracy", "Augmented copies of a photograph in training and test data; duplicates not controlled; single split"],
-        ["Prasetyo (2024) [21]", "This dataset (451 images, 7 classes)", "80/10/10 split before augmentation",
+        ["Prasetyo [21]", "This dataset (451 images, 7 classes)", "80/10/10 split before augmentation",
          "VGG-16/19, Xception, Inception V3", "≈73–75% test accuracy (VGG-16)", "Single 45-image test split; duplicates not controlled; no variance or tests"],
         ["This study", "This dataset after audit (431 images, 7 classes)", "Duplicate-aware 5-fold CV, nested LR selection",
          "8 backbones × 6 activations (+ ReLU6), 1,268 runs", "81.2 ± 2.8% accuracy, 80.4 ± 2.8% macro-F1",
@@ -469,13 +497,11 @@ TABLES = {
 # ---------------------------------------------------------------------------
 
 CITATION = re.compile(r"\[(\d+(?:\s*[–,-]\s*\d+)*)\]")
-NEW_OF = {}   # old -> new citation number, filled by renumber_citations and applied to table cells
+CONVERT = {}   # filled by authoryear_citations; converts [n] citations inside table cells
 
 
 def remap(text: str) -> str:
-    if not NEW_OF:
-        return text
-    return CITATION.sub(lambda m: "[" + _compress([NEW_OF[n] for n in _expand(m.group(1))]) + "]", text)
+    return CONVERT["fn"](text) if CONVERT else text
 
 
 def _expand(group: str) -> list:
@@ -502,20 +528,79 @@ def _compress(nums: list) -> str:
     return ",".join(out)
 
 
-def renumber_citations(text: str, refs: list):
-    """Renumber citations in order of first appearance (Vancouver style) and reorder the list to match."""
-    order = []
-    for m in CITATION.finditer(text):
-        for n in _expand(m.group(1)):
-            if n not in order:
-                order.append(n)
-    missing = sorted(set(range(1, len(refs) + 1)) - set(order))
+def _ref_author_year(ref: str):
+    authors, year = re.match(r"^(.*?)\s*\((\d{4}|n\.d\.)\)", ref).groups()
+    if authors.startswith("Potato Diseases Datasets"):
+        return "Potato Diseases Datasets", year, ["Potato Diseases Datasets"]
+    names = [a.strip() for a in authors.split(",")]
+    etal = any("et al" in n for n in names)
+    names = [re.sub(r"\s*et al\.?$", "", n).strip() for n in names]
+    names = [n for n in names if n]
+    surnames = [" ".join(n.split()[:-1]) if len(n.split()) > 1 else n for n in names]
+    if len(surnames) == 1 and not etal:
+        who = surnames[0]
+    elif len(surnames) == 2 and not etal:
+        who = f"{surnames[0]} and {surnames[1]}"
+    else:
+        who = f"{surnames[0]} et al."
+    return who, year, surnames
+
+
+def authoryear_citations(text: str, refs: list):
+    """
+    Springer name-year style: numeric [n] citations become (Author Year) or, when the author is already
+    named in the sentence, Author (Year); the reference list is alphabetised by first author.
+    """
+    meta = {i: _ref_author_year(r) for i, r in enumerate(refs, 1)}
+    groups = {}
+    for i, (who, year, _) in meta.items():
+        groups.setdefault((who, year), []).append(i)
+    label = {}
+    for (who, year), idx in groups.items():
+        idx = sorted(idx, key=lambda i: refs[i - 1].split(")", 1)[1].strip().lower())
+        for k, i in enumerate(idx):
+            label[i] = (who, year + ("abcdefgh"[k] if len(idx) > 1 else ""))
+    cited = set()
+
+    def convert(t: str) -> str:
+        out, last = [], 0
+        for m in CITATION.finditer(t):
+            nums = _expand(m.group(1))
+            if not all(n in label for n in nums):      # not a citation, e.g. the interval [0, 1]
+                continue
+            cited.update(nums)
+            before = t[last:m.start()]
+            if len(nums) == 1:
+                who, yr = label[nums[0]]
+                stripped = before.rstrip()
+                if stripped.endswith(who):
+                    out.append(stripped + f" ({yr})")
+                    last = m.end()
+                    continue
+            items = sorted({label[n] for n in nums}, key=lambda wy: (wy[1], wy[0]))
+            out.append(before + "(" + "; ".join(f"{w} {y}" for w, y in items) + ")")
+            last = m.end()
+        out.append(t[last:])
+        return "".join(out)
+
+    CONVERT["fn"] = convert
+    text = convert(text)
+    for cell in table_prior_work().values.ravel():   # citations inside generated tables count too
+        for m in CITATION.finditer(str(cell)):
+            cited.update(_expand(m.group(1)))
+    missing = sorted(set(range(1, len(refs) + 1)) - cited)
     if missing:
         raise SystemExit(f"References never cited: {missing}")
-    new_of = {old: new for new, old in enumerate(order, 1)}
-    NEW_OF.update(new_of)
-    text = CITATION.sub(lambda m: "[" + _compress([new_of[n] for n in _expand(m.group(1))]) + "]", text)
-    return text, [refs[old - 1] for old in order]
+
+    def sort_key(i):
+        who, year, surnames = meta[i]
+        n = 0 if len(surnames) == 1 and "et al." not in who else (1 if " and " in who else 2)
+        co = surnames[1].lower() if n == 1 else ""
+        return (surnames[0].lower(), n, co, label[i][1])
+
+    order = sorted(meta, key=sort_key)
+    return text, [refs[i - 1] for i in order]
+
 
 def build_manuscript(gradcam_sentence: str) -> str:
     doc = Document()
@@ -554,7 +639,8 @@ def build_manuscript(gradcam_sentence: str) -> str:
     h1, h2 = 0, 0
     text = open(os.path.join(MS, "part1_intro_methods.md"), encoding="utf-8").read() + "\n\n" + \
         open(os.path.join(MS, "part2_results_discussion.md"), encoding="utf-8").read()
-    text, references = renumber_citations(text, REFERENCES)
+    text = online_resource(text)
+    text, references = authoryear_citations(text, REFERENCES)
     text = text.replace("[[GRADCAM_SENTENCE]]", gradcam_sentence)
     text = text.replace("[[FUNDING]]", "This research received no external funding.")
     for block in re.split(r"\n\s*\n", text):
@@ -563,7 +649,7 @@ def build_manuscript(gradcam_sentence: str) -> str:
             continue
         if block.startswith("# "):
             title = block[2:].strip()
-            if title == "Declarations":
+            if title == "Statements and Declarations":
                 doc.add_heading(title, level=1)
             else:
                 h1 += 1
@@ -596,12 +682,15 @@ def build_manuscript(gradcam_sentence: str) -> str:
             add_runs(doc.add_paragraph(), " ".join(block.splitlines()))
 
     doc.add_heading("References", level=1)
-    for i, ref in enumerate(references, 1):
+    for ref in references:
         p = doc.add_paragraph()
         p.paragraph_format.line_spacing = 1.0
         p.paragraph_format.space_after = Pt(4)
-        p.add_run(f"{i}. {ref}").font.size = Pt(10)
+        p.paragraph_format.left_indent = Cm(0.75)
+        p.paragraph_format.first_line_indent = Cm(-0.75)
+        p.add_run(ref).font.size = Pt(10)
 
+    add_line_and_page_numbers(doc)
     path = os.path.join(MS, "Revised_Manuscript_Potato_Tuber_Disease_CNN_Activation.docx")
     doc.save(path)
     print(f"[saved] {path}  ({table_no} tables, {fig_no} figures, {len(REFERENCES)} references)")
@@ -615,8 +704,11 @@ def build_supplement() -> str:
         sec.orientation = WD_ORIENT.LANDSCAPE
         sec.page_width, sec.page_height = sec.page_height, sec.page_width
     t = doc.add_paragraph()
-    r = t.add_run("Supplementary material\n" + TITLE)
+    r = t.add_run("Online Resource 1")
     r.bold = True
+    t.add_run("\n" + TITLE + "\nPotato Research\n" + ", ".join(a[0] for a in AUTHORS) +
+              "\nCorresponding author: Serhat Kılıçarslan, Department of Software Engineering, Bandırma Onyedi Eylül "
+              "University, Bandırma, Türkiye (skilicarslan@bandirma.edu.tr)")
 
     s = pd.read_csv(os.path.join(TAB, "all_configurations.csv"))
     s["order"] = s.arch.map(C.ARCHITECTURES.index)
@@ -678,6 +770,7 @@ def build_response(fill: dict) -> str:
     text = open(os.path.join(MS, "response_to_reviewers.md"), encoding="utf-8").read()
     for k, v in fill.items():
         text = text.replace("{{" + k + "}}", v)
+    text = online_resource(text)
     left = re.findall(r"\{\{[A-Z_0-9]+\}\}", text)
     if left:
         raise SystemExit(f"Unfilled placeholders in the response letter: {sorted(set(left))}")
